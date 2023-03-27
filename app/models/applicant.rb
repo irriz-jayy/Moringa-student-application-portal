@@ -1,2 +1,7 @@
 class Applicant < ApplicationRecord
+
+    
 end
+
+
+
