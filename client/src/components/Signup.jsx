@@ -1,6 +1,5 @@
 function Signup(){
 
-
     return(
         <div>
             <div>
@@ -16,7 +15,6 @@ function Signup(){
                 </form>
                     {/* button for switching accounts */}
                     <button>already have an account? login</button>
-
             </div>
         </div>
     )
