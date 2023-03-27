@@ -2,18 +2,8 @@
 import './App.css';
 import Signup from './components/Signup';
 import Login from './components/Login';
-<<<<<<< HEAD
 //import { ToastContainer, toast } from 'react-toastify';
 //import {Routes,Route} from 'react-router-dom';
-=======
-import { ToastContainer, toast } from 'react-toastify';
-import {Routes,Route} from 'react-router-dom';
-import LandingPage from './containers/LandingPage'
-import Navbar from './components/Navbar';
-import CourseCard from './components/CourseCard';
-import AllCourses from './containers/AllCourses';
-import React,{useState, useEffect} from 'react';
->>>>>>> main
 
 function App() {
 const [courses, setCourses] = useState([])
@@ -31,10 +21,6 @@ const [courses, setCourses] = useState([])
 
   return (
     <div className="App">
-<<<<<<< HEAD
-        <Signup/>
-
-        <LandingPage/>
         <Signup/>
         <Login/>
 =======
