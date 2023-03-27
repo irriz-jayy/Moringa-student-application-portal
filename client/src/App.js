@@ -9,6 +9,9 @@ function App() {
   return (
     <div className="App">
         <Signup/>
+
+        <LandingPage/>
+        <Signup/>
         <Login/>
     </div>
   );
