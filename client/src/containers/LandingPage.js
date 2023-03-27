@@ -1,11 +1,14 @@
+import './LandingPage.css';
 
 function LandingPage() {
     return(
-        <div>
-            <h1>Start your tech journey here</h1>
-            <p>View courses and manage you applications with ease.</p>
+        <div className="landing-page">
+            <div className='landing-text container-flex'>
+                <h1>Start your tech journey here</h1>
+                <p>View courses and manage your applications with ease.</p>
 
-            <button>View Courses</button>
+                <button className='button btn btn-lg'>View Courses</button>
+            </div>
         </div>
     )
 }

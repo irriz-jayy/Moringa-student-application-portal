@@ -1,0 +1,46 @@
+.landing-page {
+    height: 100vh;
+    background-image: url("../frontend_images/LandingPage_Background_Image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-inline: 100px;
+}
+
+.landing-text {
+    position: relative;
+    top: 25vh;
+}
+
+h1, p {
+    color: white;
+    margin: 0px;
+}
+
+h1 {
+    font-size: 7rem;
+    width: 50vw;
+    margin: 0px;
+    padding-block: 18px;
+    font-weight: 700;
+}
+
+p {
+    font-size: 2rem;
+    width: 25vw;
+}
+
+.button {
+    margin-block: 54px;
+    padding-block: 20px;
+    padding-inline: 100px;
+    background-color: #f5510f;
+    color: white;
+    font-size: xx-large;
+    border-radius: 50px;
+    font-weight: 700;
+}
+
+.button:hover{
+    background-color: rgb(255, 51, 0);
+    color: white;
+}
