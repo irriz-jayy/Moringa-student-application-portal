@@ -1,7 +1,11 @@
 {
   "applicants": [
     {
+<<<<<<< HEAD
       "id": "1",
+=======
+      "id": 1,
+>>>>>>> main
       "firstname": "Davy",
       "lastname": "Masilva",
       "username": "masilva",
@@ -14,6 +18,7 @@
       "username": "",
       "email": "",
       "dob": "",
+<<<<<<< HEAD
       "id": "ThArW7m"
     },
     {
@@ -162,3 +167,39 @@
     }
   ]
 }
+=======
+      "id": 2
+    }
+  ],
+  "courses": [
+    {
+      "id": 1,
+      "title": "Software Engineering",
+      "description": "Software engineering is very hard, veeery hard!",
+      "modules": "Eng Maths Physics Ruby",
+      "banner": "https://visafoto.com/img/source355x388_cn_0044.jpg",
+      "fee": 100000,
+      "date" : "12-2-2022"
+    },
+    {
+      "id": 2,
+      "title": "Ruby Engineering",
+      "description": "Ruby engineering is very relative, veeery relative!",
+      "modules": "Eng Maths Physics React",
+      "banner": "https://visafoto.com/img/source355x388_cn_0044.jpg",
+      "fee": 150000,
+      "date" : "22-3-2022"
+    },
+    {
+      "id": 3,
+      "title": "Python Engineering",
+      "description": "Python engineering is very easy, veeery easy!",
+      "modules": "Eng Maths Physics Javascript",
+      "banner": "https://visafoto.com/img/source355x388_cn_0044.jpg",
+      "fee": 200000,
+      "date" : "20-6-2023"
+    }
+  ]
+
+}
+>>>>>>> main

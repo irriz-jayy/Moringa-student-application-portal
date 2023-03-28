@@ -1,18 +1,31 @@
 //import React from "react";
+<<<<<<< HEAD
 //import { useNavigate } from 'react-router-dom';
 //import { toast } from "react-toastify";
+=======
+import { useNavigate } from 'react-router-dom';
+import { toast } from "react-toastify";
+>>>>>>> main
 
 
 function Signup(){
 
+<<<<<<< HEAD
    // const navigate = useNavigate();
+=======
+    const navigate = useNavigate();
+>>>>>>> main
 
 
     // function to handle new registrations of applicants
     // function to post applicants to database
 
     function handleSignup(e){
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> main
         e.preventDefault()
 
         const newApplicant={
@@ -35,10 +48,18 @@ function Signup(){
           })
         .then(res=>res.json())
         .then(data=>{
+<<<<<<< HEAD
             console.log(data);
 
            // toast.success('Succesfully Registered')
             //navigate('/login')
+=======
+           
+            //Display succesfull response
+            toast.success('Succesfully Registered')
+            //navigates to login page
+            navigate('/login')
+>>>>>>> main
         })
 
     }
