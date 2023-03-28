@@ -1,7 +1,16 @@
 
 
-function CourseCard({course}){
+function CourseCard({course, display, setDisplay, setSingleCourse}){
     const {title,banner,description,modules,fee,date} = course;
+
+
+
+    function handleClick(){
+        if(display ==='homescreen'){
+            setDisplay('view');
+            setSingleCourse(course)
+        }
+    }
     return(
         <div>
             <div>
@@ -12,7 +21,7 @@ function CourseCard({course}){
                     <h1>{title}</h1>
                     <p>{description}</p>
                     <p>{date}</p>
-                    <button>view course</button>
+                    <button onClick={handleClick}>view course</button>
                 </div>
             </div>
         </div>
