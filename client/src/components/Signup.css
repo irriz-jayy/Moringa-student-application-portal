@@ -1,0 +1,66 @@
+.page {
+    background-image: url("../frontend_images/PageBackground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    padding-block: 50px;
+}
+
+.form {
+    width: 60vw;
+    height: max-content;
+    margin: auto;
+    padding-inline: 8rem;
+    padding-block: 1rem;
+    border-radius: 30px;
+    background-color: #101f3c;
+}
+
+.form-title, .form-submit, .form p {
+    text-align: center;
+    padding-inline: 0px;
+    margin: 0px;
+}
+
+.form-title {
+    font-size: 3.5rem;
+}
+
+label {
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+.form-control {
+    font-size: 1.5rem;
+}
+
+.form .btn {
+    background-color: #f5510f;
+    color: white;
+    margin-block: 36px;
+    padding: 10px;
+    padding-inline: 20px;
+    font-size: xx-large;
+    font-weight: 700;
+}
+
+.form .btn:hover {
+    background-color: #f5350f;
+    color: white;
+}
+
+.form p, .form a {
+    font-size: 1.5rem;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+.form p {
+    padding-block: 18px;
+}
+
+.form a:hover {
+    color: #f5510f;
+}
