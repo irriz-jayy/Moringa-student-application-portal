@@ -3,12 +3,62 @@
     background-image: url("../frontend_images/LandingPage_Background_Image.png");
     background-repeat: no-repeat;
     background-size: cover;
-    padding-inline: 100px;
+    background-position: 50%;
 }
 
+/* Narrow Screen */
+@media screen and (max-width: 1010px) {
+    .landing-text {
+        max-height: auto;
+        padding-right: 50px;
+        top: 15vh;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+        padding-right: 30px;
+    }
+
+    .button {
+        padding-block: 10px;
+        padding-inline: 50px;
+        font-size: x-large;
+    }
+    
+}
+
+/* Wide Screen */
+@media screen and (min-width: 1011px) {
+    .landing-text {
+        max-height: 200vh;
+        padding-right: 50px;
+        top: 20vh;
+    }
+
+    h1 {
+        font-size: 7rem;
+        padding-right: 200px;
+    }
+
+    p {
+        font-size: 2rem;
+        width: 35vw;
+    }
+
+    .button {
+        padding-block: 20px;
+        padding-inline: 100px;
+        font-size: xx-large;
+    }
+}
+
+/* Styles for All Widths */
 .landing-text {
-    position: relative;
-    top: 25vh;
+    position: absolute;
 }
 
 h1, p {
@@ -17,25 +67,15 @@ h1, p {
 }
 
 h1 {
-    font-size: 7rem;
-    width: 50vw;
     margin: 0px;
     padding-block: 18px;
     font-weight: 700;
 }
 
-p {
-    font-size: 2rem;
-    width: 25vw;
-}
-
 .button {
     margin-block: 54px;
-    padding-block: 20px;
-    padding-inline: 100px;
     background-color: #f5510f;
     color: white;
-    font-size: xx-large;
     border-radius: 50px;
     font-weight: 700;
 }

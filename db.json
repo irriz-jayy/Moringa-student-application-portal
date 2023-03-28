@@ -1,7 +1,11 @@
 {
   "applicants": [
     {
+<<<<<<< HEAD
+      "id": "1",
+=======
       "id": 1,
+>>>>>>> main
       "firstname": "Davy",
       "lastname": "Masilva",
       "username": "masilva",
@@ -14,6 +18,156 @@
       "username": "",
       "email": "",
       "dob": "",
+<<<<<<< HEAD
+      "id": "ThArW7m"
+    },
+    {
+      "firstname": "DAVID",
+      "lastname": "ONYANGO",
+      "username": "masilva",
+      "email": "davidonyango7872@gmail.com",
+      "dob": "0004-04-04",
+      "id": "LVkO7SB"
+    },
+    {
+      "firstname": "",
+      "lastname": "",
+      "username": "",
+      "email": "",
+      "dob": "",
+      "id": "Y4GshE8"
+    },
+    {
+      "firstname": "",
+      "lastname": "",
+      "username": "",
+      "email": "",
+      "dob": "",
+      "id": "rIfbgsp"
+    },
+    {
+      "firstname": "",
+      "lastname": "",
+      "username": "",
+      "email": "",
+      "dob": "",
+      "id": "c9bVez9"
+    },
+    {
+      "firstname": "",
+      "lastname": "",
+      "username": "",
+      "email": "",
+      "dob": "",
+      "id": "oblGJ4m"
+    },
+    {
+      "firstname": "",
+      "lastname": "",
+      "username": "",
+      "email": "",
+      "dob": "",
+      "id": "iQWas35"
+    },
+    {
+      "firstname": "",
+      "lastname": "",
+      "username": "",
+      "email": "",
+      "dob": "",
+      "id": "fQvKFgX"
+    },
+    {
+      "firstname": "",
+      "lastname": "",
+      "username": "",
+      "email": "",
+      "dob": "",
+      "id": "mtqv9rs"
+    },
+    {
+      "firstname": "",
+      "lastname": "",
+      "username": "",
+      "email": "",
+      "dob": "",
+      "id": "F5Cq-C0"
+    },
+    {
+      "firstname": "",
+      "lastname": "",
+      "username": "",
+      "email": "",
+      "dob": "",
+      "id": "LzHVWG1"
+    },
+    {
+      "firstname": "",
+      "lastname": "",
+      "username": "",
+      "email": "",
+      "dob": "",
+      "id": "7TL0r0X"
+    },
+    {
+      "firstname": "",
+      "lastname": "",
+      "username": "",
+      "email": "",
+      "dob": "",
+      "id": "tH11Mof"
+    },
+    {
+      "firstname": "",
+      "lastname": "",
+      "username": "",
+      "email": "",
+      "dob": "",
+      "id": "d20BKl7"
+    },
+    {
+      "firstname": "",
+      "lastname": "",
+      "username": "",
+      "email": "",
+      "dob": "",
+      "id": "b4dwKQ0"
+    },
+    {
+      "firstname": "",
+      "lastname": "",
+      "username": "",
+      "email": "",
+      "dob": "",
+      "id": "RQw8vXt"
+    },
+    {
+      "firstname": "",
+      "lastname": "",
+      "username": "",
+      "email": "",
+      "dob": "",
+      "id": "mvs8QHm"
+    },
+    {
+      "firstname": "",
+      "lastname": "",
+      "username": "",
+      "email": "",
+      "dob": "",
+      "id": "QcP18DR"
+    },
+    {
+      "firstname": "",
+      "lastname": "",
+      "username": "",
+      "email": "",
+      "dob": "",
+      "id": "bck2VY8"
+    }
+  ]
+}
+=======
       "id": 2
     }
   ],
@@ -48,3 +202,4 @@
   ]
 
 }
+>>>>>>> main
