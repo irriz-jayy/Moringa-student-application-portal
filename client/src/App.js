@@ -23,7 +23,7 @@ const [courses, setCourses] = useState([])
         })
       },[])
 
-     
+
   return (
     <div className="App">
       <Navbar/>
