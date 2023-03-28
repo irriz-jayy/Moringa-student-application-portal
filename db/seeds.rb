@@ -1,12 +1,7 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
- 
+
 puts "Seeding in process...."
-Applicant.create(username: "Shebang", first_name: "Hellen", last_name: "Akinyi", age: 24, date_of_birth: 1999, email: "shebang@gmail.com")
+
+Applicant.create(username: "Shebang", first_name: "Hellen", last_name: "Akinyi", age: 24, date_of_birth: 1999-03-02, email: "shebang@gmail.com")
 Applicant.create(username: "earth", first_name: "William ", last_name: "Kentridge", age: 23, date_of_birth: 2000, email: "willmuh@gmail.com")
 Applicant.create(username: "ice", first_name: "Geri", last_name: "wakasongsa", age: 25, date_of_birth: 1998, email: "geri500@gmail.com")
 Applicant.create(username: "fire", first_name: "Adel", last_name: "Abdessemed", age: 22, date_of_birth: 2001, email: "armtàge500@gmail.com")
@@ -17,6 +12,13 @@ Applicant.create(username: "troy", first_name: "Cisco", last_name: "Ramon", age:
 Applicant.create(username: "baz", first_name: "Luke ", last_name: "Dunphy", age: 20, date_of_birth: 2003, email: "lukie@yahoo.com")
 Applicant.create(username: "clark", first_name: "Luke ", last_name: "Dunphy", age: 24, date_of_birth: 1999, email: "lukie@yahoo.com")
 Applicant.create(username: "cent", first_name: "Jean", last_name: "Albèrola", age: 21, date_of_birth: 2002, email: "jeanMicheal@gmail.com")
+
+
+
+Application.create(applicant_id: 1, course_id: 1, documents:"null", status: "ok")
+Application.create(applicant_id: 2, course_id: 2, documents:"null", status: "pending")
+Application.create(applicant_id: 3, course_id: 3, documents:"null", status: "ok")
+
 
 Course.create(
     [
@@ -152,4 +154,7 @@ Course.create(
     ]
 )
 
+
 puts "Seeding done."
+
+

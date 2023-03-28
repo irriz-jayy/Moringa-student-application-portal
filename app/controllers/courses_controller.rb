@@ -1,7 +1,8 @@
 class CoursesController < ApplicationController
     rescue_from ActiveRecord::RecordNotFound, with: :render_not_found_response
-    rescue_from ActiveRecord::RecordInvalid, with: :render_unprocessable_entity_response
+    # rescue_from ActiveRecord::RecordInvalid, with: :render_unprocessable_entity_response
 
+    wrap_parameters format: []
 
     def index
         course = Course.all
@@ -13,32 +14,13 @@ class CoursesController < ApplicationController
         render json: course, except: [:created_at, :updated_at], status: :ok    
     end
     
-    def create
-        course = Course.create!(course_params)
-        render json: course, status: :ok
-    end
      
-    def destroy
-        course = find_course
-        course.destroy
-        head :no_content
-    end
-
-    def update
-        course = find_course
-        course.update!(course_params)
-        render json: course, except: [:created_at, :updated_at], status: :created
-    end
 
     private 
 
     def find_course
-        course.find(params[:id])
+        Course.find(params[:id])
     end
-
-    def course_params
-        params.permit(:id, :name, :description)
-     end
 
     def render_not_found_response
         render json: {error: "course not found"}, status: :not_found
