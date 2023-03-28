@@ -1,7 +1,7 @@
 class ApplicantsController < ApplicationController
     rescue_from ActiveRecord::RecordNotFound, with: :render_not_found_response
-    rescue_from ActiveRecord::RecordInvalid, with: :render_unprocessable_entity_response
-
+    # rescue_from ActiveRecord::RecordInvalid, with: :render_unprocessable_entity_response
+   wrap_parameters format: []
 
     def index
         applicant = Applicant.all
@@ -14,7 +14,7 @@ class ApplicantsController < ApplicationController
     end
     
     def create
-        applicant = Applicant.create!(applicant_params)
+        applicant = Applicant.create(applicant_params)
         render json: applicant, status: :ok
     end
 
@@ -37,7 +37,7 @@ class ApplicantsController < ApplicationController
     end
 
     def applicant_params
-        params.permit(:id, :name, :description)
+        params.permit(:id, :username, :first_name, :last_name, :age, :date_of_birth, :email)
      end
 
     def render_not_found_response

@@ -1,8 +1,8 @@
 class Course < ApplicationRecord
-    validates :short_description, length: {minimum: 20}, presence: true
-    validates :description, length: {maximum: 20}, presence: true
+    # validates :short_description, length: {minimum: 20}, presence: true
+    # validates :description, length: {minimum: 20}, presence: true
 
-    has_many :applications
-    has_many :applicants, through: :applications
+    has_many :applications, dependent: :destroy
+    has_many :applicants, through: :applications, dependent: :destroy
 
 end
