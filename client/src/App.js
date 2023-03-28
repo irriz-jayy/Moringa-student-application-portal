@@ -12,6 +12,7 @@ import CourseCard from './components/CourseCard';
 import AllCourses from './containers/AllCourses';
 import React,{useState, useEffect} from 'react';
 
+
 function App() {
 const [courses, setCourses] = useState([])
 
