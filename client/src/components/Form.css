@@ -1,4 +1,6 @@
 .page {
+    height: 100vh;
+    min-height: max-content;
     background-image: url("../frontend_images/PageBackground.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -12,8 +14,9 @@
     margin: auto;
     padding-inline: 8rem;
     padding-block: 1rem;
-    border-radius: 30px;
+    border-radius: 40px;
     background-color: #101f3c;
+    box-shadow: 10px 10px 5px #9a9795;
 }
 
 .form-title, .form-submit, .form p {
@@ -59,6 +62,10 @@ label {
 
 .form p {
     padding-block: 18px;
+}
+
+.form a {
+    padding-left: 0.5rem;
 }
 
 .form a:hover {
