@@ -1,4 +1,4 @@
-import "./Signup.css"
+import "./Form.css"
 //import React from "react";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
@@ -82,7 +82,7 @@ function Signup() {
         
         {/* Switch to Logging In */}
         <p className="container">
-            Already have an account?<a href="/login">Log In</a>
+            Already have an account?<a href="/login">Log in</a>
         </p>
 
       </div>
