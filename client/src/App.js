@@ -1,5 +1,6 @@
 
 import './App.css';
+import LandingPage from './containers/LandingPage'
 import Signup from './components/Signup';
 import Login from './components/Login';
 //import { ToastContainer, toast } from 'react-toastify';
@@ -21,10 +22,11 @@ const [courses, setCourses] = useState([])
 
   return (
     <div className="App">
+        <LandingPage/>
         <Signup/>
         <Login/>
 
-      <Navbar/>
+        <Navbar/>
         {/* <Signup/>
         <LandingPage/> */}
 
