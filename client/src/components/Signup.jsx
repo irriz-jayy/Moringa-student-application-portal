@@ -34,6 +34,7 @@ function Signup() {
         //Display succesfull response
         toast.success("Succesfully Registered");
         //navigates to login page
+        //will redirect to login page
         navigate("/login");
       });
   }
