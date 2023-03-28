@@ -2,6 +2,7 @@ class ApplicationsController < ApplicationController
 
     rescue_from ActiveRecord::RecordNotFound, with: :render_not_found_response
     # rescue_from ActiveRecord::RecordInvalid, with: :render_unprocessable_entity_response
+    wrap_parameters format: []
 
 
     def index
@@ -15,7 +16,7 @@ class ApplicationsController < ApplicationController
     end
     
     def create
-        application = Application.create!(application_params)
+        application = Application.create(application_params)
         render json: application, status: :ok
     end
 
@@ -34,11 +35,11 @@ class ApplicationsController < ApplicationController
     private 
 
     def find_application
-        application.find(params[:id])
+        Application.find(params[:id])
     end
 
     def application_params
-        params.permit(:id, :name, :description)
+        params.permit(:id, :applicant_id, :course_id, :documents, :status)
      end
 
     def render_not_found_response
