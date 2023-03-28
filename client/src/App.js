@@ -23,7 +23,7 @@ const [courses, setCourses] = useState([])
     <div className="App">
         <Signup/>
         <Login/>
-=======
+
       <Navbar/>
         {/* <Signup/>
         <LandingPage/> */}
@@ -34,7 +34,7 @@ const [courses, setCourses] = useState([])
         </Route>
         </Routes>
         <ToastContainer/>
->>>>>>> main
+
     </div>
   );
 }
