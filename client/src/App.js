@@ -25,11 +25,10 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      {/* <Signup/>
-        <LandingPage/> */}
 
-      <AllCourses courses={courses} />
       <Routes>
+        <Route path="/" element={<LandingPage/>}></Route>
+        <Route path="/signup" element={<Signup/>}></Route>
         <Route path="/login" element={<Login />}></Route>
       </Routes>
       <ToastContainer />
