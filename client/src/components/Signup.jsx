@@ -1,3 +1,4 @@
+import "./Signup.css"
 //import React from "react";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
@@ -40,21 +41,50 @@ function Signup() {
   }
 
   return (
-    <div>
-      <div>
+    <div className="page container-flex">
+      <div className="form">
+        
+        <h1 className="form-title">Signup</h1>
+
         <form onSubmit={handleSignup}>
-          <h1>SignUp</h1>
-          <input name="firstname" type="text" placeholder="first name" />
-          <input name="lastname" type="text" placeholder="last name" />
-          <input name="username" type="text" placeholder="username" />
-          <input name="email" type="email" placeholder="email" />
-          <input name="dob" type="date" placeholder="DOB" />
-          <input type="submit" />
+          <div className="mb-3">
+            <label className="form-label">First Name</label>
+            <input className="form-control" name="firstname" type="text" placeholder="First Name" />
+          </div>
+
+          <div className="mb-3">
+            <label className="form-label">Last Name</label>
+            <input className="form-control" name="lastname" type="text" placeholder="Last Name" />
+          </div>
+
+          <div className="mb-3">
+            <label className="form-label">Username</label>
+            <input className="form-control" name="username" type="text" placeholder="Username" />
+          </div>
+          
+          <div className="mb-3">
+            <label className="form-label">Email</label>
+            <input className="form-control" name="email" type="email" placeholder="Email" />
+          </div>
+
+          <div className="mb-3">
+            <label className="form-label">Date of Birth</label>
+            <input className="form-control" name="dob" type="date" placeholder="Date of Birth" />
+          </div>
+
+          <div className="form-submit">
+            <button type="submit" className="btn">Sign Up</button>
+          </div>
+        
+          
+
         </form>
-        {/* button for switching accounts */}
-        <p>
-          Already have an account? <a href="!#">Login</a>
+        
+        {/* Switch to Logging In */}
+        <p className="container">
+            Already have an account?<a href="/login">Log In</a>
         </p>
+
       </div>
     </div>
   );
