@@ -1,20 +1,27 @@
+import "./NavBar.css"
 import React from "react";
 import { Link } from "react-router-dom"
 
 function Navbar(){
     return (
-        <div>
-            <div>
-                {/* replace H1 with the official logo */}
+        <div className="navbar border-bottom border-5">
+            <div className="container-fluid">
+                
+                <a className="navbar-brand" href="/">
+                    <img src="../frontend_images/Argonaut web services.png" alt="logo" height="60"/>
+                </a>
 
-            <h1>ARGONAUT</h1>
+                <div className="navlinks container-flex">
+                    <Link to="/courses" className="btn">All Courses</Link>
 
-                <button><Link to="/courses">All Courses</Link></button>
-                <button><Link to="/applications">My Applications</Link></button>
-                <button><Link to="/login">Login</Link></button>
+                    <Link to="/applications" className="btn">My Applications</Link>
+                    
+                    <Link to="/login" className="btn">Login</Link>
+                </div>
+                
             </div>
 
-            </div>
+        </div>
 
     )
 }

@@ -1,0 +1,59 @@
+/* Narrow Screen */
+@media screen and (max-width: 1010px) {
+    .navbar {
+        padding-inline: 10px;
+        display: flex;
+    }
+    .container-fluid {
+        display: flex;
+        justify-content: center !important;
+    }
+
+    .navlinks {
+        padding-block: 15px;
+    }
+
+    .navbar .btn {
+        margin-left: 0px;
+        margin-inline: 10px;
+        font-size: 20px;
+    }
+}
+
+
+/* Wide Screen */
+@media screen and (min-width: 1011px) {
+    .navbar {
+        height: max-content;
+        padding-inline: 100px;
+    }
+
+    .container-fluid {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navbar .btn {
+        margin-left: 50px;
+        font-size: 20px;
+    }
+}
+
+
+/* Styles for All Widths */
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #ffffff;
+}
+
+.navbar .btn {
+    font-size: 20px;
+}
+
+.navbar .btn:hover{
+    background-color: #f5510f;
+    font-weight: 700;
+    color: #ffffff;
+}
