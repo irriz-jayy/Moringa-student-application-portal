@@ -11,21 +11,21 @@
     .landing-text {
         max-height: auto;
         padding-right: 50px;
-        top: 15vh;
+        top: 30vh;
     }
 
     h1 {
-        font-size: 5rem;
+        font-size: 6rem;
     }
 
     p {
-        font-size: 1.5rem;
+        font-size: 2rem;
         padding-right: 30px;
     }
 
     .button {
-        padding-block: 10px;
-        padding-inline: 50px;
+        padding-block: 15px;
+        padding-inline: 60px;
         font-size: x-large;
     }
     
@@ -36,7 +36,7 @@
     .landing-text {
         max-height: 200vh;
         padding-right: 50px;
-        top: 20vh;
+        top: 25vh;
     }
 
     h1 {
@@ -75,12 +75,12 @@ h1 {
 .button {
     margin-block: 54px;
     background-color: #f5510f;
-    color: white;
+    color: #ffffff;
     border-radius: 50px;
     font-weight: 700;
 }
 
-.button:hover{
-    background-color: rgb(255, 51, 0);
+.button:hover {
+    background-color: #f5350f;
     color: white;
 }
