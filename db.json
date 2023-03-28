@@ -1,7 +1,7 @@
 {
   "applicants": [
     {
-      "id": "1",
+      "id": 1,
       "firstname": "Davy",
       "lastname": "Masilva",
       "username": "masilva",
@@ -14,151 +14,37 @@
       "username": "",
       "email": "",
       "dob": "",
-      "id": "ThArW7m"
+      "id": 2
+    }
+  ],
+  "courses": [
+    {
+      "id": 1,
+      "title": "Software Engineering",
+      "description": "Software engineering is very hard, veeery hard!",
+      "modules": "Eng Maths Physics Ruby",
+      "banner": "https://visafoto.com/img/source355x388_cn_0044.jpg",
+      "fee": 100000,
+      "date" : "12-2-2022"
     },
     {
-      "firstname": "DAVID",
-      "lastname": "ONYANGO",
-      "username": "masilva",
-      "email": "davidonyango7872@gmail.com",
-      "dob": "0004-04-04",
-      "id": "LVkO7SB"
+      "id": 2,
+      "title": "Ruby Engineering",
+      "description": "Ruby engineering is very relative, veeery relative!",
+      "modules": "Eng Maths Physics React",
+      "banner": "https://visafoto.com/img/source355x388_cn_0044.jpg",
+      "fee": 150000,
+      "date" : "22-3-2022"
     },
     {
-      "firstname": "",
-      "lastname": "",
-      "username": "",
-      "email": "",
-      "dob": "",
-      "id": "Y4GshE8"
-    },
-    {
-      "firstname": "",
-      "lastname": "",
-      "username": "",
-      "email": "",
-      "dob": "",
-      "id": "rIfbgsp"
-    },
-    {
-      "firstname": "",
-      "lastname": "",
-      "username": "",
-      "email": "",
-      "dob": "",
-      "id": "c9bVez9"
-    },
-    {
-      "firstname": "",
-      "lastname": "",
-      "username": "",
-      "email": "",
-      "dob": "",
-      "id": "oblGJ4m"
-    },
-    {
-      "firstname": "",
-      "lastname": "",
-      "username": "",
-      "email": "",
-      "dob": "",
-      "id": "iQWas35"
-    },
-    {
-      "firstname": "",
-      "lastname": "",
-      "username": "",
-      "email": "",
-      "dob": "",
-      "id": "fQvKFgX"
-    },
-    {
-      "firstname": "",
-      "lastname": "",
-      "username": "",
-      "email": "",
-      "dob": "",
-      "id": "mtqv9rs"
-    },
-    {
-      "firstname": "",
-      "lastname": "",
-      "username": "",
-      "email": "",
-      "dob": "",
-      "id": "F5Cq-C0"
-    },
-    {
-      "firstname": "",
-      "lastname": "",
-      "username": "",
-      "email": "",
-      "dob": "",
-      "id": "LzHVWG1"
-    },
-    {
-      "firstname": "",
-      "lastname": "",
-      "username": "",
-      "email": "",
-      "dob": "",
-      "id": "7TL0r0X"
-    },
-    {
-      "firstname": "",
-      "lastname": "",
-      "username": "",
-      "email": "",
-      "dob": "",
-      "id": "tH11Mof"
-    },
-    {
-      "firstname": "",
-      "lastname": "",
-      "username": "",
-      "email": "",
-      "dob": "",
-      "id": "d20BKl7"
-    },
-    {
-      "firstname": "",
-      "lastname": "",
-      "username": "",
-      "email": "",
-      "dob": "",
-      "id": "b4dwKQ0"
-    },
-    {
-      "firstname": "",
-      "lastname": "",
-      "username": "",
-      "email": "",
-      "dob": "",
-      "id": "RQw8vXt"
-    },
-    {
-      "firstname": "",
-      "lastname": "",
-      "username": "",
-      "email": "",
-      "dob": "",
-      "id": "mvs8QHm"
-    },
-    {
-      "firstname": "",
-      "lastname": "",
-      "username": "",
-      "email": "",
-      "dob": "",
-      "id": "QcP18DR"
-    },
-    {
-      "firstname": "",
-      "lastname": "",
-      "username": "",
-      "email": "",
-      "dob": "",
-      "id": "bck2VY8"
+      "id": 3,
+      "title": "Python Engineering",
+      "description": "Python engineering is very easy, veeery easy!",
+      "modules": "Eng Maths Physics Javascript",
+      "banner": "https://visafoto.com/img/source355x388_cn_0044.jpg",
+      "fee": 200000,
+      "date" : "20-6-2023"
     }
   ]
+
 }
