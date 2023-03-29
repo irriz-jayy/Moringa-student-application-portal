@@ -1,18 +1,13 @@
 class SessionsController < ApplicationController
-    skip_before_action :authorize, only: [:login]
-
-    def login
-        applicant = Applicant.find_by(username: params[:username])
-        if(applicant && applicant.authorize(params[:password]))
-            session[:applicant_id] = applicant.id
-            render json: {status: :ok, loggedin: true, applicant: :applicant}
-        else
-            render json: {errors: ["Wrong username or password"]}, status: :unauthorized   
-        end 
+    def create
+      applicant = Applicant.find_by(username: params[:username])
+      session[:applicant_session_id] = applicant.id
+      render json: applicant
     end
-
-    def logout
-        session.delete :applicant_id
-        head :no_content
+  
+  
+    def destroy
+      session.delete :applicant_session_id
+      head :no_content
     end
-end
+  end
