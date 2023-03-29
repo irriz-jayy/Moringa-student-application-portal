@@ -3,7 +3,7 @@
     background-image: url("../frontend_images/LandingPage_Background_Image.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 50%;
+    background-position: center;
 }
 
 /* Narrow Screen */
