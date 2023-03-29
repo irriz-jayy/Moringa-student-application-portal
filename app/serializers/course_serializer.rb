@@ -1,3 +1,3 @@
 class CourseSerializer < ApplicationSerializer
-  attributes :id
+  # attributes :id
 end
