@@ -1,7 +1,25 @@
 import "./Form.css"
+import React, { useState } from "react";
+
 
 function Login(){
 
+    const[username, setUsername] = useState("");
+
+    function handleSubmit(event){
+        event.preventDefault();
+
+        fetch("/login", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({ username: username })
+        })
+        .then(res=>res.json())
+        .then(data=> setUsername(data))
+    }
+    console.log(username)
 
     return (
         <div className="page container-flex">
@@ -9,11 +27,11 @@ function Login(){
                 
                 <h1 className="form-title">Login</h1>
 
-                <form>
+                <form onSubmit={handleSubmit}>
 
                     <div className="mb-3">
                         <label className="form-label">Username</label>
-                        <input className="form-control" name="username" type='text' placeholder="Username"/>
+                        <input className="form-control" name="username" type='text' placeholder="Username"value={username}  onChange={(e) => setUsername(e.target.value)}/>
                     </div>
 
                     <div className="mb-3">

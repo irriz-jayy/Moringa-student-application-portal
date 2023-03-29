@@ -16,15 +16,12 @@ const [courses, setCourses] = useState([])
 const [display, setDisplay] = useState('homescreen')
 const [singleCourse, setSingleCourse] = useState({})
 
-      useEffect(()=>{
-        //get request for all courses
-        fetch('http://localhost:8001/courses')
-        .then(res=>res.json())
-        .then(data=>{
-         // console.log(data);
-          setCourses(data)
-        })
-      },[])
+    useEffect(()=>{
+      //get request for all courses
+      fetch('/courses')
+      .then(res=> res.json())
+      .then(data=> setCourses(data))
+    },[])
 
 
   return (
