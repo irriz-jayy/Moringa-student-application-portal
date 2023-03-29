@@ -1,0 +1,19 @@
+.card-page {
+    padding-top: 0px;
+}
+
+.page-header {
+    padding-block: 10px;
+    padding-inline: 100px;
+    background-color: #101f3c;
+}
+
+.page-header h1 {
+    font-size: 3rem;
+}
+
+.card-grid {
+    width: auto;
+    padding-block: 3rem;
+    padding-inline: 10rem;
+}

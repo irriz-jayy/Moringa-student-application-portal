@@ -1,0 +1,74 @@
+/* CourseCard */
+.course-card {
+    background-color: #101f3c;
+}
+
+/* Application Card */
+.application-card {
+    background-color: #ffffff;
+}
+
+/* Styling for All Cards */
+.card {
+    margin-inline: 30px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px #9a9795;
+}
+
+
+.card-img-top {
+    height: 348px;
+    border-start-start-radius: 20px;
+    border-start-end-radius: 20px;
+}
+
+.card-title {
+    padding-inline: 0px;
+    padding-top: 36px;
+    font-size: 2.5rem;
+    color: #f5510f;
+}
+
+.card-body {
+    padding-inline: 50px;
+}
+
+.card-text {
+    font-size: 1.2rem;
+    max-width: fit-content;
+}
+
+.start-date {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 24px;
+}
+
+.start-date .calendar-icon {
+    color: #ffffff;
+    height: 2.5rem;
+    width: max-content;
+    padding-right: 1rem;   
+}
+
+.button-row {
+    padding-block: 0px;
+    height: min-content;
+}
+
+.button-row .btn {
+    background-color: #f5510f;
+    color: white;
+    margin-bottom: 36px;
+    padding: 10px;
+    padding-inline: 20px;
+    font-size: larger;
+    font-weight: 700;
+}
+
+.button-row .btn:hover {
+    background-color: #f5350f;
+    color: white;
+}

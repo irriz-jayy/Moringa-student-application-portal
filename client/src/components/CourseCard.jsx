@@ -1,9 +1,8 @@
-
+import "./Card.css"
+import { VscCalendar } from "react-icons/vsc";
 
 function CourseCard({course, display, setDisplay, setSingleCourse}){
-    const {title,banner,description,modules,fee,date} = course;
-
-
+    const {title, banner, description, short_description, modules,fee, start_date} = course;
 
     function handleClick(){
         if(display ==='homescreen'){
@@ -11,20 +10,30 @@ function CourseCard({course, display, setDisplay, setSingleCourse}){
             setSingleCourse(course)
         }
     }
+
     return(
-        <div>
-            <div>
+        <div className="col">
+            <div className="card course-card h-100">
                 <div>
-                <img src={banner} alt={title}/>
+                    <img className="card-img-top" src={banner} alt={title}/>
                 </div>
-                <div>
-                    <h1>{title}</h1>
-                    <p>{description}</p>
-                    <p>{date}</p>
-                    <button onClick={handleClick}>view course</button>
+                <div className="card-body">
+                    <h1 className="card-title">{title}</h1>
+
+                    <p className="card-text">{description}</p>
+
+                    <div className="start-date">
+                        <VscCalendar className="calendar-icon"/><p>{start_date}</p>
+                    </div>
                 </div>
+
+                <div className="card-body button-row">
+                    <button className="btn" onClick={handleClick}>View Course</button>
+                </div>
+                
             </div>
         </div>
+        
     )
 }
 export default CourseCard;
