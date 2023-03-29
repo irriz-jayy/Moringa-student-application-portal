@@ -1,4 +1,5 @@
 import './LandingPage.css';
+import { Link } from "react-router-dom";
 
 function LandingPage() {
     return(
@@ -7,7 +8,7 @@ function LandingPage() {
                 <h1>Start your tech journey here</h1>
                 <p>View courses and manage your applications with ease.</p>
 
-                <button className='button btn btn-lg'>View Courses</button>
+                <Link className='button btn btn-lg' to="/courses">View Courses</Link>
             </div>
         </div>
     )
