@@ -1,8 +1,18 @@
+
+
 Rails.application.routes.draw do
-  resources :sessions, only: [:login, :logout]
-  resources :courses, only: [:index, :show]
-  resources :applications, only: [:index, :show, :create, :update, :destroy]
-  resources :applicants, only: [:index, :show, :create, :update, :destroy, :loggedin]
+  resources :admins, only: [:index]
+  resources :applications
+  resources :courses
+  resources :applicants
+
+
+  post "/login", to: "sessions#create"
+  get "/me", to: "applicants#show"
+  delete "/logout", to: "sessions#destroy"
+
+  # post '/signup', to: 'applicants#signup'
+  # post '/login', to: 'applicants#login'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
