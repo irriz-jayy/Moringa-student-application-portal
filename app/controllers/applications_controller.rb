@@ -1,5 +1,4 @@
 class ApplicationsController < ApplicationController
-    skip_before_action :authorized, only: [:create]
 
     rescue_from ActiveRecord::RecordNotFound, with: :render_not_found_response
     # rescue_from ActiveRecord::RecordInvalid, with: :render_unprocessable_entity_response
@@ -32,8 +31,6 @@ class ApplicationsController < ApplicationController
         application.destroy
         head :no_content
     end
-
-
 
     private 
 

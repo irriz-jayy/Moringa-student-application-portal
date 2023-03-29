@@ -1,5 +1,4 @@
 class ApplicantsController < ApplicationController
-    skip_before_action :authorized, only: [:create]
     rescue_from ActiveRecord::RecordNotFound, with: :render_not_found_response
     # rescue_from ActiveRecord::RecordInvalid, with: :render_unprocessable_entity_response
    wrap_parameters format: []
@@ -29,15 +28,6 @@ class ApplicantsController < ApplicationController
         applicant = find_applicant
         applicant.destroy
         head :no_content
-    end
-
-    def loggedin
-        applicant = Applicant.find_by(id: session[:applicant_id] ) 
-        if(applicant)
-           render json: {loggedin: true, applicant: applicant}
-        else
-           render json: {loggedin: false}
-        end      
     end
 
     private 
