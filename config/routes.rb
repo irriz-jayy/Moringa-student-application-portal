@@ -4,11 +4,16 @@ Rails.application.routes.draw do
   resources :admins, only: [:index]
   resources :applications
   resources :courses
-  resources :applicants
 
-  get "/loggedin", to: "applicants#loggedin"
-  post "/login", to: "sessions#create"
+  # Applicants Routes
+  resources :applicants
+  #   GET /me for fetching the currently logged in user
   get "/me", to: "applicants#show"
+
+  # Sessions Routes
+  #   POST /login for logging in
+  post "/login", to: "sessions#create"
+  #   DELETE /logout for logging out
   delete "/logout", to: "sessions#destroy"
 
   # post '/signup', to: 'applicants#signup'
