@@ -11,7 +11,7 @@ class ApplicantsController < ApplicationController
     if(applicant)
         render json: applicant, status: :ok
     else
-        head :no_content
+        render json: {error: "Not authorized."}, status: :unauthorized
     end    
   end
 

@@ -23,8 +23,11 @@ function App() {
   // Fetch Current User
   useEffect(() => {
     fetch('/me')
-    .then(res => res.json())
-    .then(data => setCurrentUser(data))
+    .then(res => {
+      if(res.ok){
+        res.json().then(data => setCurrentUser(data))
+      }
+    })
   }, [])
 
   // Initial Fetch Courses
@@ -35,7 +38,7 @@ function App() {
     .then(data=> setCourses(data))
   },[])
 
-  console.log("Current user: ", currentUser)
+  // console.log("Current user: ", currentUser)
 
   return (
     <div className="App">
