@@ -4,7 +4,21 @@ import React, { useState } from "react";
 
 function Login(){
 
-    const[username, setUsername] = useState("");
+    const[loginFormData, setLoginFormData] = useState({
+        username: '',
+        password: ''
+    });
+
+    // Function to handle changing form fields
+    function handleChange(e) {
+        const name = e.target.name
+        const value = e.target.value
+
+        setLoginFormData({
+            ...loginFormData,
+            [name]: value
+        })
+    }
 
     function handleSubmit(event){
         event.preventDefault();
@@ -14,12 +28,12 @@ function Login(){
             headers: {
                 "Content-Type": "application/json"
             },
-            body: JSON.stringify({ username: username })
+            body: JSON.stringify(loginFormData)
         })
         .then(res=>res.json())
-        .then(data=> setUsername(data))
+        .then(data=> setLoginFormData(data))
     }
-    console.log(username)
+    console.log(loginFormData)
 
     return (
         <div className="page container-flex">
@@ -31,12 +45,12 @@ function Login(){
 
                     <div className="mb-3">
                         <label className="form-label">Username</label>
-                        <input className="form-control" name="username" type='text' placeholder="Username"value={username}  onChange={(e) => setUsername(e.target.value)}/>
+                        <input className="form-control" name="username" type='text' placeholder="Username"value={loginFormData.username}  onChange={handleChange}/>
                     </div>
 
                     <div className="mb-3">
-                        <label className="form-label">Email</label>
-                        <input className="form-control" name="email" type='email' placeholder="Email"/>
+                        <label className="form-label">Password</label>
+                        <input className="form-control" name="password" type='password' placeholder="Password" value={loginFormData.password} onChange={handleChange}/>
                     </div>
 
                     <div className="form-submit">
