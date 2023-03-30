@@ -1,9 +1,18 @@
 import "./AllCourses.css"
-
+import { useEffect, useState } from "react";
 import CourseCard from "../components/CourseCard";
 
-function AllCourses({courses, display,setDisplay, setSingleCourse}){
+function AllCourses({  }){
+    // States
+    const [courses, setCourses] = useState([])
 
+    // Fetch Courses
+    useEffect(() => {
+        //get request for all courses
+        fetch('/courses')
+        .then(res=> res.json())
+        .then(coursesData=> setCourses(coursesData))
+    }, [])
 
     return(
         <div className="page card-page">
@@ -13,7 +22,7 @@ function AllCourses({courses, display,setDisplay, setSingleCourse}){
 
             <div className="card-grid">
                 <div className="row row-cols-sm-1 row-cols-md-1 row-cols-lg-2 g-5">
-                    {courses.map((course)=> <CourseCard setSingleCourse={setSingleCourse} display={display} setDisplay={setDisplay} course={course} key={course.id}/>)}
+                    {courses.map((course)=> <CourseCard course={course} key={course.id}/>)}
                 </div>
             </div>
             
