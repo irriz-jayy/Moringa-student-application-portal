@@ -1,15 +1,10 @@
 import "./Card.css"
 import { VscCalendar } from "react-icons/vsc";
+import { Link } from "react-router-dom";
 
-function CourseCard({course, display, setDisplay, setSingleCourse}){
+function CourseCard({ course }){
     const {title, banner, description, short_description, modules,fee, start_date} = course;
 
-    function handleClick(){
-        if(display ==='homescreen'){
-            setDisplay('view');
-            setSingleCourse(course)
-        }
-    }
 
     return(
         <div className="col">
@@ -28,7 +23,7 @@ function CourseCard({course, display, setDisplay, setSingleCourse}){
                 </div>
 
                 <div className="card-body button-row">
-                    <button className="btn" onClick={handleClick}>View Course</button>
+                    <Link className="btn" to={`/courses/${course.id}`}>View Course</Link>
                 </div>
                 
             </div>
