@@ -2,8 +2,18 @@ import "./NavBar.css"
 import React from "react";
 import { Link } from "react-router-dom"
 
-function Navbar(){
+function Navbar({ currentUser, setCurrentUser, navigate }){
     const logo_url = "https://raw.githubusercontent.com/irriz-jayy/Moringa-student-application-portal/main/client/src/frontend_images/Argonaut%20web%20services.png"
+
+    // Event Handlders
+    function handleLogout(e) {
+        fetch('/logout', {
+            method: "DELETE"
+        })
+        navigate("/")
+
+        setCurrentUser({ })
+    }
 
     return (
         <div className="navbar border-bottom border-5">
@@ -18,7 +28,7 @@ function Navbar(){
 
                     <Link to="/applications" className="btn">My Applications</Link>
                     
-                    <Link to="/login" className="btn">Login</Link>
+                    {!currentUser.username ? <Link to="/login" className="btn">Login</Link> : <button onClick={handleLogout} className="btn">Logout</button>}
                 </div>
                 
             </div>

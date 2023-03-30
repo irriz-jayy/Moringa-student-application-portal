@@ -11,7 +11,7 @@ class ApplicantsController < ApplicationController
     if(applicant)
         render json: applicant, status: :ok
     else
-        render json: {loggedin: false}
+        head :no_content
     end    
   end
 
