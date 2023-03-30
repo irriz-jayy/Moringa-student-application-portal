@@ -23,7 +23,7 @@ function CourseCard({ course }){
                 </div>
 
                 <div className="card-body button-row">
-                    <Link className="btn" to={`/courses/${course.id}`}>View Course</Link>
+                    <Link className="btn card-button" to={`/courses/${course.id}`}>View Course</Link>
                 </div>
                 
             </div>
