@@ -1,21 +1,44 @@
 class ApplicantsController < ApplicationController
 
-    #skip_before_action :authorize, only: [:create, :show, :index]
+    skip_before_action :authorize, only: [:create, :show, :index, :destroy, :loggedin]
   
     def index
       render json: Applicant.all
     end
-  
-  
-  
+
     def show
-      applicant = Applicant.find_by(id: session[:applicant_session_id])
-      if applicant
-        render json: applicant
-      else
-        render json: { error: "Not authorized" }, status: :unauthorized
-      end
+      applicant = find_applicant
+      render json: applicant, status: :ok
     end
+  
+    # def show
+    #   applicant = Applicant.find_by(id: session[:applicant_id])
+    #   if applicant
+    #     render json: applicant
+    #   else
+    #     render json: { error: "Not authorized" }, status: :unauthorized
+    #   end
+    # end
+
+    def create 
+      applicant = Applicant.create!(applicant_params)
+      if applicant.valid?
+          render json: { "success": "Applicant saved successfully!"}
+      else
+          render json: applicant.errors.messages
+      end
+   end
+
+    def loggedin
+      applicant = Applicant.find_by(id: session[:applicant_id] ) 
+      if(applicant)
+          render json: {loggedin: true, applicant: applicant}
+      else
+          render json: {loggedin: false}
+      end      
+    end
+
+    
 
   def update
       applicant = find_applicant

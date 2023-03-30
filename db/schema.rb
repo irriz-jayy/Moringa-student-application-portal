@@ -18,6 +18,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_27_140922) do
     t.integer "age"
     t.date "date_of_birth"
     t.string "email"
+    t.string "password_digest"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -29,6 +30,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_27_140922) do
     t.string "status"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["applicant_id"], name: "index_applications_on_applicant_id"
+    t.index ["course_id"], name: "index_applications_on_course_id"
   end
 
   create_table "courses", force: :cascade do |t|
@@ -46,4 +49,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_27_140922) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "applications", "applicants"
+  add_foreign_key "applications", "courses"
 end

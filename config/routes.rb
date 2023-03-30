@@ -6,10 +6,10 @@ Rails.application.routes.draw do
   resources :courses
   resources :applicants
 
-
-  post "/login", to: "sessions#create"
+  get "/loggedin", to: "applicants#loggedin"
+  post "/login", to: "sessions#login"
   get "/me", to: "applicants#show"
-  delete "/logout", to: "sessions#destroy"
+  delete "/logout", to: "sessions#logout"
 
   # post '/signup', to: 'applicants#signup'
   # post '/login', to: 'applicants#login'

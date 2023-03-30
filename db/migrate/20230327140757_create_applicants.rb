@@ -7,6 +7,8 @@ class CreateApplicants < ActiveRecord::Migration[7.0]
       t.integer :age
       t.date :date_of_birth
       t.string :email
+      t.string :password_digest
+
 
       t.timestamps
     end

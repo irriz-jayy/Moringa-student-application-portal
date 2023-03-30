@@ -1,8 +1,10 @@
 class ApplicationsController < ApplicationController
+  skip_before_action :authorize, only: [:index, :create]
 
     def index
       render json: Application.all
     end
+
     def create
       application = Application.create!(application_params)
       render json: application, status: :created
