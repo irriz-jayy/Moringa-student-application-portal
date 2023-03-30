@@ -1,6 +1,5 @@
 class ApplicationController < ActionController::API
-  # before_action :authorize
-
+  before_action :authorize
    wrap_parameters format: []
 
 
@@ -21,7 +20,8 @@ class ApplicationController < ActionController::API
    end
 
    def authorize
-     render json: {error: "Unauthorized Access, Login"}, status: :unauthorized unless session.include? :applicant_session_id
+      @current_applicant = Applicant.find_by(id: session[:user_id] )  
+      render json: {error: ["Not authorized"]}, status: :unauthorized unless @current_applicant
    end
 
 end
