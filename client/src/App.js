@@ -12,16 +12,25 @@ import React,{useState, useEffect} from 'react';
 import CourseDescriptionCard from './components/CourseDescriptionCard';
 
 function App() {
+const [currentUser, setCurrentUser] = useState({})
 const [courses, setCourses] = useState([])
 const [display, setDisplay] = useState('homescreen')
 const [singleCourse, setSingleCourse] = useState({})
 
-    useEffect(()=>{
-      //get request for all courses
-      fetch('/courses')
-      .then(res=> res.json())
-      .then(data=> setCourses(data))
-    },[])
+  // Fetch Current User
+  useEffect(() => {
+    fetch('/me')
+    .then(res => res.json())
+    .then(data => setCurrentUser(data))
+  }, [])
+
+  // Initial Fetch Courses
+  useEffect(()=>{
+    //get request for all courses
+    fetch('/courses')
+    .then(res=> res.json())
+    .then(data=> setCourses(data))
+  },[])
 
 
   return (
@@ -31,7 +40,7 @@ const [singleCourse, setSingleCourse] = useState({})
     <Routes>
       <Route path="/" element={<LandingPage/>}></Route>
       <Route path="/signup" element={<Signup/>}></Route>
-      <Route path="/login" element={<Login />}></Route>
+      <Route path="/login" element={<Login setCurrentUser={setCurrentUser} />}></Route>
       <Route path='/courses' element={display==='homescreen'?  <AllCourses setSingleCourse={setSingleCourse} courses={courses} display={display} setDisplay={setDisplay} /> : <CourseDescriptionCard singleCourse={singleCourse} setDisplay={setDisplay} />}></Route>
     </Routes>
     <ToastContainer />

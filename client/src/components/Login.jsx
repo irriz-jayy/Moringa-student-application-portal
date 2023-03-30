@@ -2,7 +2,7 @@ import "./Form.css"
 import React, { useState } from "react";
 
 
-function Login(){
+function Login({ setCurrentUser }){
 
     const[loginFormData, setLoginFormData] = useState({
         username: '',
@@ -20,8 +20,8 @@ function Login(){
         })
     }
 
-    function handleSubmit(event){
-        event.preventDefault();
+    function handleSubmit(e){
+        e.preventDefault();
 
         fetch("/login", {
             method: "POST",
@@ -31,9 +31,10 @@ function Login(){
             body: JSON.stringify(loginFormData)
         })
         .then(res=>res.json())
-        .then(data=> setLoginFormData(data))
+        .then(data=> setCurrentUser(data))
+
+        e.target.reset()
     }
-    console.log(loginFormData)
 
     return (
         <div className="page container-flex">
@@ -45,7 +46,7 @@ function Login(){
 
                     <div className="mb-3">
                         <label className="form-label">Username</label>
-                        <input className="form-control" name="username" type='text' placeholder="Username"value={loginFormData.username}  onChange={handleChange}/>
+                        <input className="form-control" name="username" type='text' placeholder="Username" value={loginFormData.username}  onChange={handleChange}/>
                     </div>
 
                     <div className="mb-3">
