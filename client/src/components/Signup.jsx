@@ -28,19 +28,7 @@ function Signup() {
   function handleSignup(e) {
     e.preventDefault();
 
-
-
-    // const newApplicant = {
-    //   first_name: e.target.first_name.value,
-    //   last_name: e.target.last_name.value,
-    //   username: e.target.username.value,
-    //   email: e.target.email.value,
-    //   date_of_birth: e.date_of_birth.value
-    // };
-
     //Post new users
-
-    //console.log(newApplicant);
 
     fetch("/applicants", {
       method: "POST",
