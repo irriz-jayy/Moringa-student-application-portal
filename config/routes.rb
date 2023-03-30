@@ -7,9 +7,9 @@ Rails.application.routes.draw do
   resources :applicants
 
   get "/loggedin", to: "applicants#loggedin"
-  post "/login", to: "sessions#login"
+  post "/login", to: "sessions#create"
   get "/me", to: "applicants#show"
-  delete "/logout", to: "sessions#logout"
+  delete "/logout", to: "sessions#destroy"
 
   # post '/signup', to: 'applicants#signup'
   # post '/login', to: 'applicants#login'
