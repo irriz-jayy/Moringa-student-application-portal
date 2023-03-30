@@ -1,10 +1,8 @@
 import "./Form.css"
 import React, {useState} from "react";
-import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 
-function Signup() {
-  const navigate = useNavigate();
+function Signup({ navigate }) {
   const [signupFormData, setSignupFormData] = useState({
     first_name: '',
       last_name: '',

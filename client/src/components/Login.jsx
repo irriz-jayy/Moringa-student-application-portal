@@ -2,7 +2,7 @@ import "./Form.css"
 import React, { useState } from "react";
 
 
-function Login({ setCurrentUser }){
+function Login({ setCurrentUser, navigate }){
 
     const[loginFormData, setLoginFormData] = useState({
         username: '',
@@ -34,6 +34,7 @@ function Login({ setCurrentUser }){
         .then(data=> setCurrentUser(data))
 
         e.target.reset()
+        navigate("/")
     }
 
     return (
