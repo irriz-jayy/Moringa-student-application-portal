@@ -1,16 +1,16 @@
 
 puts "Seeding in process...."
 
-Applicant.create(username: "Shebang", first_name: "Hellen", last_name: "Akinyi", age: 24, date_of_birth: 1999-03-02, email: "shebang@gmail.com", password: "tiffa")
-Applicant.create(username: "earth", first_name: "William ", last_name: "Kentridge", age: 23, date_of_birth: 2000, email: "willmuh@gmail.com", password: "will")
-Applicant.create(username: "ice", first_name: "Geri", last_name: "wakasongsa", age: 25, date_of_birth: 1998, email: "geri500@gmail.com", password:"geri")
-Applicant.create(username: "fire", first_name: "Adel", last_name: "Abdessemed", age: 22, date_of_birth: 2001, email: "armtàge500@gmail.com", password: "maryta")
-Applicant.create(username: "sun", first_name: "Wangechi", last_name: "Mutu", age: 20, date_of_birth: 2003, email: "wangechimutu@gmail.com", password: "wangechi")
-Applicant.create(username: "alex", first_name: "Julie", last_name: "Mehretu", age: 24, date_of_birth: 1999, email: "mahretujulie@yahoo.com", password: "julia")
-Applicant.create(username: "trojan", first_name: "Wael", last_name: "Shawky", age: 23, date_of_birth: 2000, email: "waeelshawky@yaohoo.com",password: "shawky")
-Applicant.create(username: "troy", first_name: "Cisco", last_name: "Ramon", age: 19, date_of_birth: 2004, email: "ciscoRamon@yahoo.com", password: "cisco")
-Applicant.create(username: "baz", first_name: "Luke ", last_name: "Dunphy", age: 20, date_of_birth: 2003, email: "lukie@yahoo.com", password: "lukie")
-Applicant.create(username: "cent", first_name: "Jean", last_name: "Albèrola", age: 21, date_of_birth: 2002, email: "jeanMicheal@gmail.com", password: "jean")
+Applicant.create(username: "Shebang", first_name: "Hellen", last_name: "Akinyi",date_of_birth: 1999-03-02, email: "shebang@gmail.com", password: "tiffa")
+Applicant.create(username: "earth", first_name: "William ", last_name: "Kentridge",date_of_birth: 2000, email: "willmuh@gmail.com", password: "will")
+Applicant.create(username: "ice", first_name: "Geri", last_name: "wakasongsa",date_of_birth: 1998, email: "geri500@gmail.com", password:"geri")
+Applicant.create(username: "fire", first_name: "Adel", last_name: "Abdessemed",date_of_birth: 2001, email: "armtàge500@gmail.com", password: "maryta")
+Applicant.create(username: "sun", first_name: "Wangechi", last_name: "Mutu",date_of_birth: 2003, email: "wangechimutu@gmail.com", password: "wangechi")
+Applicant.create(username: "alex", first_name: "Julie", last_name: "Mehretu", date_of_birth: 1999, email: "mahretujulie@yahoo.com", password: "julia")
+Applicant.create(username: "trojan", first_name: "Wael", last_name: "Shawky",date_of_birth: 2000, email: "waeelshawky@yaohoo.com",password: "shawky")
+Applicant.create(username: "troy", first_name: "Cisco", last_name: "Ramon", date_of_birth: 2004, email: "ciscoRamon@yahoo.com", password: "cisco")
+Applicant.create(username: "baz", first_name: "Luke ", last_name: "Dunphy", date_of_birth: 2003, email: "lukie@yahoo.com", password: "lukie")
+Applicant.create(username: "cent", first_name: "Jean", last_name: "Albèrola",date_of_birth: 2002, email: "jeanMicheal@gmail.com", password: "jean")
 
 
 

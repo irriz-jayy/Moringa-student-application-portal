@@ -12,6 +12,7 @@ class Applicant < ApplicationRecord
     private
     def over_18
       if date_of_birth.present? && ((Date.today - date_of_birth).to_i/365) < 18
+      if date_of_birth.present? && ((Date.today - date_of_birth).to_i/365) < 18
         errors.add(:age, "must be over 18 years old")
       end
     end

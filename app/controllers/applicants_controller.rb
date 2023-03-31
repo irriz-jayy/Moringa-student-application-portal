@@ -18,7 +18,7 @@ class ApplicantsController < ApplicationController
   def create 
     applicant = Applicant.create!(applicant_params)
     if applicant.valid?
-        render json: { "success": "Applicant saved successfully!"}
+        render json: applicant, except: [:created_at, :updated_at], status: :created
     else
         render json: applicant.errors.messages
     end
@@ -43,7 +43,7 @@ class ApplicantsController < ApplicationController
   end
   
     def applicant_params
-      params.permit(:id, :username, :first_name, :last_name, :age, :date_of_birth, :email, :password)
+      params.permit(:id, :username, :first_name, :last_name, :date_of_birth, :email, :password)
    end
   
    def log_in_params
