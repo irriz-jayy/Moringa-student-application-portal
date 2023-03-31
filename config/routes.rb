@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   resources :applicants
   #   GET /me for fetching the currently logged in user
   get "/me", to: "applicants#show"
+  delete "/logout", to: "sessions#destroy"
 
   # Sessions Routes
   #   POST /login for logging in
