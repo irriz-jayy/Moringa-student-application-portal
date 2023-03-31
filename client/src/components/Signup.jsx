@@ -7,8 +7,9 @@ function Signup({ navigate }) {
     first_name: '',
       last_name: '',
       username: '',
+      date_of_birth: '',
       email:'',
-      date_of_birth: ''
+      password: ''
   })
 
   // function to handle new registrations of applicants
@@ -21,7 +22,6 @@ function Signup({ navigate }) {
       })
   }
 
-    console.log(signupFormData)
 
   function handleSignup(e) {
     e.preventDefault();
@@ -71,13 +71,18 @@ function Signup({ navigate }) {
           </div>
 
           <div className="mb-3">
+            <label className="form-label">Date of Birth</label>
+            <input className="form-control" value={signupFormData.date_of_birth} onChange={handleSignupChange} name="date_of_birth" type="date" placeholder="Date of Birth" />
+          </div>
+
+          <div className="mb-3">
             <label className="form-label">Email</label>
             <input className="form-control" value={signupFormData.email} onChange={handleSignupChange} name="email" type="email" placeholder="Email" />
           </div>
 
           <div className="mb-3">
-            <label className="form-label">Date of Birth</label>
-            <input className="form-control" value={signupFormData.date_of_birth} onChange={handleSignupChange} name="date_of_birth" type="date" placeholder="Date of Birth" />
+            <label className="form-label">Password</label>
+            <input className="form-control" value={signupFormData.password} onChange={handleSignupChange} name="password" type="password" placeholder="Password" />
           </div>
 
           <div className="form-submit">
