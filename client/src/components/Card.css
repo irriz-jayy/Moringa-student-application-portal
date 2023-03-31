@@ -3,10 +3,23 @@
     background-color: #101f3c;
 }
 
+.course-card .start-date .calendar-icon {
+    color: #ffffff;
+}
+
 /* Application Card */
 .application-card {
     background-color: #ffffff;
 }
+
+.application-card .card-text, .application-card p {
+    color: #000000;
+}
+
+.application-card .start-date .calendar-icon {
+    color: #000000;
+}
+
 
 /* Styling for All Cards */
 .card {
@@ -47,7 +60,6 @@
 }
 
 .start-date .calendar-icon {
-    color: #ffffff;
     height: 2.5rem;
     width: max-content;
     padding-right: 1rem;   
@@ -56,19 +68,29 @@
 .button-row {
     padding-block: 0px;
     height: min-content;
+    display: flex;
+    justify-content: space-between;
+    max-height: min-content;
 }
 
-.button-row .btn {
+.button-row .card-button {
     background-color: #f5510f;
     color: white;
     margin-bottom: 36px;
     padding: 10px;
     padding-inline: 20px;
+    height: min-content;
     font-size: larger;
     font-weight: 700;
 }
 
-.button-row .btn:hover {
+.button-row .card-button-outline {
+    background-color: #00000000;
+    border-color: #f5510f !important;
+    color: #f5510f;
+}
+
+.button-row .card-button:hover {
     background-color: #f5350f;
     color: white;
 }
