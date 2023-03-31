@@ -1,6 +1,6 @@
 class Applicant < ApplicationRecord
-    has_many :applications
-    has_many :courses, through: :applications
+    has_many :applications, dependent: :destroy
+    has_many :courses, through: :applications, dependent: :destroy
     has_secure_password
 
 
