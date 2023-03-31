@@ -1,16 +1,16 @@
 
 puts "Seeding in process...."
 
-Applicant.create(username: "Shebang", first_name: "Hellen", last_name: "Akinyi",date_of_birth: 1999-03-02, email: "shebang@gmail.com", password: "tiffa")
-Applicant.create(username: "earth", first_name: "William ", last_name: "Kentridge",date_of_birth: 2000, email: "willmuh@gmail.com", password: "will")
-Applicant.create(username: "ice", first_name: "Geri", last_name: "wakasongsa",date_of_birth: 1998, email: "geri500@gmail.com", password:"geri")
-Applicant.create(username: "fire", first_name: "Adel", last_name: "Abdessemed",date_of_birth: 2001, email: "armtàge500@gmail.com", password: "maryta")
-Applicant.create(username: "sun", first_name: "Wangechi", last_name: "Mutu",date_of_birth: 2003, email: "wangechimutu@gmail.com", password: "wangechi")
-Applicant.create(username: "alex", first_name: "Julie", last_name: "Mehretu", date_of_birth: 1999, email: "mahretujulie@yahoo.com", password: "julia")
-Applicant.create(username: "trojan", first_name: "Wael", last_name: "Shawky",date_of_birth: 2000, email: "waeelshawky@yaohoo.com",password: "shawky")
-Applicant.create(username: "troy", first_name: "Cisco", last_name: "Ramon", date_of_birth: 2004, email: "ciscoRamon@yahoo.com", password: "cisco")
-Applicant.create(username: "baz", first_name: "Luke ", last_name: "Dunphy", date_of_birth: 2003, email: "lukie@yahoo.com", password: "lukie")
-Applicant.create(username: "cent", first_name: "Jean", last_name: "Albèrola",date_of_birth: 2002, email: "jeanMicheal@gmail.com", password: "jean")
+Applicant.create(username: "Shebang", first_name: "Hellen", last_name: "Akinyi", date_of_birth: "1999-03-02", email: "shebang@gmail.com", password: "tiffa")
+Applicant.create(username: "earth", first_name: "William ", last_name: "Kentridge", date_of_birth: "2000-09-24", email: "willmuh@gmail.com", password: "will")
+Applicant.create(username: "ice", first_name: "Geri", last_name: "wakasongsa", date_of_birth: "1998-08-11", email: "geri500@gmail.com", password:"geri")
+Applicant.create(username: "fire", first_name: "Adel", last_name: "Abdessemed", date_of_birth: "2001-10-30", email: "armtàge500@gmail.com", password: "maryta")
+Applicant.create(username: "sun", first_name: "Wangechi", last_name: "Mutu", date_of_birth: "2003-04-27", email: "wangechimutu@gmail.com", password: "wangechi")
+Applicant.create(username: "alex", first_name: "Julie", last_name: "Mehretu", date_of_birth: "1999-05-15", email: "mahretujulie@yahoo.com", password: "julia")
+Applicant.create(username: "trojan", first_name: "Wael", last_name: "Shawky", date_of_birth: "2000-09-13", email: "waeelshawky@yaohoo.com",password: "shawky")
+Applicant.create(username: "troy", first_name: "Cisco", last_name: "Ramon", date_of_birth: "2004-12-04", email: "ciscoRamon@yahoo.com", password: "cisco")
+Applicant.create(username: "baz", first_name: "Luke ", last_name: "Dunphy", date_of_birth: "2003-02-28", email: "lukie@yahoo.com", password: "lukie")
+Applicant.create(username: "cent", first_name: "Jean", last_name: "Albèrola", date_of_birth: "2002-11-30", email: "jeanMicheal@gmail.com", password: "jean")
 
 
 
@@ -24,7 +24,7 @@ Course.create(
         {
             "title": "Data Science",
             "short_description": "It deals with data analysis",
-            "description": "This is for individuals with a demanding schedule. Learn how to explore, analyze, visualize, build models with data using programming languages, such as Python and R, and deploy models into applications.This is the course for you. Kickstart the journey to your future career now!",
+            "description": "This is for individuals with a demanding schedule. Learn how to explore, analyze, visualize, build models with data using programming languh as Python and R, and deploy models into applications.This is the course for you. Kickstart the journey to your future career now!",
             "course_modules": "Artificial Intelligence Engineer",
             "banner": "https://moringaschool.com/wp-content/uploads/2021/08/moringa-students-ms009-768x400.jpg",
             "status": "Intake on going",
@@ -39,7 +39,7 @@ Course.create(
             "short_description": "Learn how to design, develop, maintain, test, and evaluate computer software.",
             "description": "You will be able to use your skills to develop high-quality websites and dynamic applications for end users. Enroll now to kickstart your journey.Are you passionate about studying software engineering but want to avoid the hassle that comes with a daily commute? Enroll now to study from home and become a Moringa Certified Software Engineer!",
             "course_modules": "Front-End Engineer, Back-End Engineer",
-            "banner": "https://ubunifucollege.com/assets/images/classes/web.jpg",
+            "banner": "https://ubunifucollege.com/assets/imses/web.jpg",
             "status": "Intake on going",
             "requirements": "Access to a laptop or desktop computer, Access to a stable internet connection, Proficiency in written and spoken English",
             "fee": 200000,
@@ -128,7 +128,7 @@ Course.create(
         { 
             "title": "Data Science Online",
             "short_description": "It deals with data analysis",
-            "description": "This is for individuals with a demanding schedule. Learn how to explore, analyze, visualize, build models with data using programming languages, such as Python and R, and deploy models into applications.This is the course for you. Kickstart the journey to your future career now!",
+            "description": "This is for individuals with a demanding schedule. Learn how to explore, analyze, visualize, build models with data using programming languh as Python and R, and deploy models into applications.This is the course for you. Kickstart the journey to your future career now!",
             "course_modules": "Artificial Intelligence Engineer",
             "banner": "https://moringaschool.com/wp-content/uploads/2021/08/moringa-students-ms007-768x404.jpg",
             "status": "Intake on going",
@@ -141,7 +141,7 @@ Course.create(
         { 
             "title": "Data Visualization with python",
             "short_description": "If you like using both the analytical and creative sides of your brain, then a career as a data visualization consultant or engineer may be right for you.",
-            "description": "Data visualization is the graphic representation of data analysis to achieve clear and effective communication of results and insights drawn from data. One of the key skills of a data scientist is the ability to tell a compelling story, visualizing data and findings in an approachable and stimulating way. Learning to leverage software tools to visualize data takes you a step closer to becoming a good data scientist.",
+            "description": "Data visualization is the graphic representation of data analysis to achieve clear and effective communication of results and insights drawn from data. One of the key skills of a data scientist is the ability to tell a compelling story, visualizing data and findings in an approachable and stimulating way. Learning to leverare tools to visualize data takes you a step closer to becoming a good data scientist.",
             "course_modules": "Statistical Measures, Python loops & Functions, Data analysis in Pandas,",
             "banner": "https://moringaschool.com/wp-content/uploads/2023/02/data-visualization-with-python-kenya-768x522.jpg",
             "status": "Closed",
