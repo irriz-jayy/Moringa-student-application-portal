@@ -18,7 +18,7 @@ function Navbar({ currentUser, setCurrentUser, navigate }){
     return (
         <div className="navbar border-bottom border-5">
             <div className="container-fluid">
-                
+
                 <a className="navbar-brand" href="/">
                     <img src={logo_url} height="60"/>
                 </a>
@@ -26,11 +26,11 @@ function Navbar({ currentUser, setCurrentUser, navigate }){
                 <div className="navlinks container-flex">
                     <Link to="/courses" className="btn">All Courses</Link>
 
-                    <Link to="/applications" className="btn">My Applications</Link>
-                    
+                    <Link to="/my-applications" className="btn">My Applications</Link>
+
                     {!currentUser.username ? <Link to="/login" className="btn">Login</Link> : <button onClick={handleLogout} className="btn">Logout</button>}
                 </div>
-                
+
             </div>
 
         </div>

@@ -34,11 +34,11 @@ function Signup({ navigate }) {
         "Content-Type": "application/json",
         Accept: "application/json",
       },
-      body: JSON.stringify(signupFormData),
+      body: JSON.stringify(signupFormData)
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data)
+        console.log(signupFormData)
         //Display succesfull response
         toast.success("Succesfully Registered");
         //navigates to login page

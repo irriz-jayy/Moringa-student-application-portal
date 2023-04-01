@@ -27,20 +27,23 @@ function CourseDetails(){
                     <h1>{title}</h1>
                     <p>Gain hands-on experience in {title}.</p>
 
-                    <button>Apply Now</button>
+                    <div className="card-body button-row">
+                    <Link className="btn card-button" to={`/applications/${course.id}`}>Apply Now</Link>
+                    </div>
 
                     <p>{date}</p>
                     <p>duration</p>
-                </div>
 
-                <div>
+                    </div>
+
+                    <div>
                     <img src={banner} alt={title}/>
                 </div>
             </div>
 
-            <div>
-                <p>Intake Ongoing. <a href="!#">Apply Now</a></p>
-            </div>
+                    <div>
+                        <p>Intake Ongoing.  <Link className="btn card-button" to={`/applications/${course.id}`}>Apply Now</Link></p>
+                    </div>
 
             <div>
                 <div>

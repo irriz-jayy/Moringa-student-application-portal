@@ -15,7 +15,7 @@ function CourseCard({ course }){
                 <div className="card-body">
                     <h1 className="card-title">{title}</h1>
 
-                    <p className="card-text">{description}</p>
+                    <p className="card-text">{short_description}</p>
 
                     <div className="start-date">
                         <VscCalendar className="calendar-icon"/><p>{start_date}</p>
@@ -25,10 +25,10 @@ function CourseCard({ course }){
                 <div className="card-body button-row">
                     <Link className="btn card-button" to={`/courses/${course.id}`}>View Course</Link>
                 </div>
-                
+
             </div>
         </div>
-        
+
     )
 }
 export default CourseCard;
