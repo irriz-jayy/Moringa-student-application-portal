@@ -37,8 +37,5 @@ class ApplicationsController < ApplicationController
       params.permit(:id, :applicant_id, :course_id, :documents, :status)
    end
 
-    def application_params
-      params.permit(:course_id, :applicant_id, :status, :documents)
-    end
-
+   
 end
