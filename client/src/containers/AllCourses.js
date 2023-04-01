@@ -2,7 +2,7 @@ import "./AllCourses.css"
 import { useEffect, useState } from "react";
 import CourseCard from "../components/CourseCard";
 
-function AllCourses({  }){
+function AllCourses(){
     // States
     const [courses, setCourses] = useState([])
     const [search, setSearch] = useState('')
@@ -14,7 +14,7 @@ function AllCourses({  }){
         fetch('/courses')
         .then(res=> res.json())
         .then(coursesData=>{
-            console.log(coursesData);
+            // console.log(coursesData);
             setCourses(coursesData)})
     }, [])
 

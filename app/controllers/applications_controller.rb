@@ -5,6 +5,11 @@ class ApplicationsController < ApplicationController
       render json: Application.all
     end
 
+    def show
+      application = find_applications
+      render json: application, status: :ok
+    end
+
     def create
       application = Application.create!(application_params)
       render json: application, status: :created
