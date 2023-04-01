@@ -47,6 +47,10 @@
     padding-right: 1rem;   
 }
 
+.header img {
+    max-width: 50rem;
+}
+
 /* Call to Action */
 .call-to-action {
     background-color: #f5510f;
@@ -55,6 +59,16 @@
     justify-content: center;
     font-weight: 700;
 }
+
+.call-to-action p {
+    margin: auto;
+    width: fit-content;
+}
+
+.intake-closed {
+    background-color: #484747;
+}
+
 .call-to-action .apply-link {
     color: #ffffff;
 }

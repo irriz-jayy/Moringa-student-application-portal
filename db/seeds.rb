@@ -32,7 +32,7 @@ Course.create(
             "short_description": "Learn how to design, develop, maintain, test, and evaluate computer software.",
             "description": "You will be able to use your skills to develop high-quality websites and dynamic applications for end users. Enroll now to kickstart your journey.Are you passionate about studying software engineering but want to avoid the hassle that comes with a daily commute? Enroll now to study from home and become a Moringa Certified Software Engineer!",
             "course_modules": "Front-End Engineer, Back-End Engineer",
-            "banner": "https://ubunifucollege.com/assets/imses/web.jpg",
+            "banner": "https://images.unsplash.com/photo-1591608516485-a1a53df39498?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
             status: "Intake on going",
             "requirements": "Access to a laptop or desktop computer, Access to a stable internet connection, Proficiency in written and spoken English",
             "fee": 200000,
@@ -54,11 +54,11 @@ Course.create(
         },
 
         { 
-            "title": "Cloud computing",
+            "title": "Cloud Computing",
             "short_description": "Cloud technologies are enabling organisations to transform rapidly, creating a high demand for cloud-savvy employees.",
             "description": "Cloud technologies are enabling organisations to transform rapidly, creating a high demand for cloud-savvy employees. As more and more companies adopt cloud services, there’s an immense drive to hire people with cloud computing skills, which LinkedIn recognised as one of the most in-demand hard skills in the tech market.",
             "course_modules": "Cloud Developer/Engineer,Cloud Architect,Cloud Consultant",
-            "banner": "https://moringaschool.com/wp-content/uploads/2023/03/product-design-768x514.jpg",
+            "banner": "https://images.unsplash.com/photo-1560732488-6b0df240254a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
             status: "Intake on going",
             "requirements": "Access to a laptop or desktop computer, Access to a stable internet connection, Proficiency in written and spoken English",
             "fee": 180000,
@@ -132,7 +132,7 @@ Course.create(
         },
 
         { 
-            "title": "Data Visualization with python",
+            "title": "Data Visualization with Python",
             "short_description": "If you like using both the analytical and creative sides of your brain, then a career as a data visualization consultant or engineer may be right for you.",
             "description": "Data visualization is the graphic representation of data analysis to achieve clear and effective communication of results and insights drawn from data. One of the key skills of a data scientist is the ability to tell a compelling story, visualizing data and findings in an approachable and stimulating way. Learning to leverare tools to visualize data takes you a step closer to becoming a good data scientist.",
             "course_modules": "Statistical Measures, Python loops & Functions, Data analysis in Pandas,",
