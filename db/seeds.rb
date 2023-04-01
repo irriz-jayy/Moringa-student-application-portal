@@ -12,76 +12,6 @@ Applicant.create(username: "troy", first_name: "Cisco", last_name: "Ramon", date
 Applicant.create(username: "baz", first_name: "Luke ", last_name: "Dunphy", date_of_birth: "2003-02-28", email: "lukie@yahoo.com", password: "lukie")
 Applicant.create(username: "cent", first_name: "Jean", last_name: "Albèrola", date_of_birth: "2002-11-30", email: "jeanMicheal@gmail.com", password: "jean")
 
-
-# Application Data
-# {
-#     "applicant_id": 1,
-#     "course_id":2,
-#     "documents":"id, Birth certificate, KCSE certificate",
-#     "status":"Pending Review"
-# }
-# {
-#     "applicant_id": 1,
-#     "course_id":7,
-#     "documents":"id, Birth certificate, KCSE certificate",
-#     "status":"Submitted"
-# }
-# {
-#     "applicant_id": 1,
-#     "course_id":6,
-#     "documents":"id, Birth certificate, KCSE certificate, Software Certificate",
-#     "status":"Accepted"
-# }
-# {
-#     "applicant_id": 2,
-#     "course_id":4,
-#     "documents":"id, Birth certificate, KCSE certificate",
-#     "status":"Pending Review"
-# }
-# {
-#     "applicant_id": 4,
-#     "course_id":1,
-#     "documents":"id, Software development certification, KCSE certificate",
-#     "status":"Accepted"
-# }
-# {
-#     "applicant_id": 9,
-#     "course_id":1,
-#     "documents":"id, Software development certification, KCSE certificate",
-#     "status":"Submitted"
-# }
-# {
-#     "applicant_id": 8,
-#     "course_id":9,
-#     "documents":"id, Software development certification, KCSE certificate",
-#     "status":"Pending Review"
-# }
-# {
-#     "applicant_id": 7,
-#     "course_id":9,
-#     "documents":"id, Software development certification, KCSE certificate",
-#     "status":"Accepted"
-# }
-# {
-#     "applicant_id": 5,
-#     "course_id":8,
-#     "documents":"id, Birth certificate, KCSE certificate",
-#     "status":"Pending Review"
-# }
-# {
-#     "applicant_id": 4,
-#     "course_id":8,
-#     "documents":"id, Birth certificate, KCSE certificate",
-#     "status":"Pending Review"
-# }
-# {
-#     "applicant_id": 10,
-#     "course_id":6,
-#     "documents":"id, Birth certificate, KCSE certificate",
-#     "status":"Accepted"
-# }
-
-
 Course.create(
     [
         {
@@ -90,7 +20,7 @@ Course.create(
             "description": "This is for individuals with a demanding schedule. Learn how to explore, analyze, visualize, build models with data using programming languh as Python and R, and deploy models into applications.This is the course for you. Kickstart the journey to your future career now!",
             "course_modules": "Artificial Intelligence Engineer",
             "banner": "https://moringaschool.com/wp-content/uploads/2021/08/moringa-students-ms009-768x400.jpg",
-            "status": "Intake on going",
+            status: "Intake on going",
             "requirements": "Access to a laptop or desktop computer, Access to a stable internet connection, Proficiency in written and spoken English",
             "fee": 180000,
             "start_date": "2013-01-01",
@@ -103,7 +33,7 @@ Course.create(
             "description": "You will be able to use your skills to develop high-quality websites and dynamic applications for end users. Enroll now to kickstart your journey.Are you passionate about studying software engineering but want to avoid the hassle that comes with a daily commute? Enroll now to study from home and become a Moringa Certified Software Engineer!",
             "course_modules": "Front-End Engineer, Back-End Engineer",
             "banner": "https://ubunifucollege.com/assets/imses/web.jpg",
-            "status": "Intake on going",
+            status: "Intake on going",
             "requirements": "Access to a laptop or desktop computer, Access to a stable internet connection, Proficiency in written and spoken English",
             "fee": 200000,
             "start_date": "2013-02-03",
@@ -116,7 +46,7 @@ Course.create(
             "description": "Are you new to the world of cybersecurity as a professional, or just interested in getting started in this industry? This introductory course is for you. For 12 weeks learners explore topics in cybersecurity like cyber threats, and cyber intelligence while gaining practical insight into governance, risk & compliance.",
             "course_modules": "python, c++",
             "banner": "https://moringaschool.com/wp-content/uploads/2023/02/cyber-security-768x468.jpg",
-            "status": "Closed",
+            status: "Closed",
             "requirements": "Access to a laptop or desktop computer, Access to a stable internet connection, Proficiency in written and spoken English",
             "fee": 172000,
             "start_date": "2013-07-18",
@@ -129,7 +59,7 @@ Course.create(
             "description": "Cloud technologies are enabling organisations to transform rapidly, creating a high demand for cloud-savvy employees. As more and more companies adopt cloud services, there’s an immense drive to hire people with cloud computing skills, which LinkedIn recognised as one of the most in-demand hard skills in the tech market.",
             "course_modules": "Cloud Developer/Engineer,Cloud Architect,Cloud Consultant",
             "banner": "https://moringaschool.com/wp-content/uploads/2023/03/product-design-768x514.jpg",
-            "status": "Intake on going",
+            status: "Intake on going",
             "requirements": "Access to a laptop or desktop computer, Access to a stable internet connection, Proficiency in written and spoken English",
             "fee": 180000,
             "start_date": "2013-01-01",
@@ -142,7 +72,7 @@ Course.create(
             "description": "Our Product Design program will prepare you to become an end-to-end Product Designer by learning UX and UI design. You will learn to build the functionality and use cases of digital products such as mobile apps, websites, or software.",
             "course_modules": "Artificial Intelligence Engineer",
             "banner": "https://moringaschool.com/wp-content/uploads/2022/09/ui-ux-featured-768x420.jpg",
-            "status": "Closed",
+            status: "Closed",
             "requirements": "Be available to take a full-time course,Need to complete pre-work before onboarding week,Need to have completed high school",
             "fee": 190000,
             "start_date": "2013-02-20",
@@ -155,7 +85,7 @@ Course.create(
             "description": "The Full-Stack Software Engineering Curriculum covers both Back-End and Front-End programming technologies using Python.It is an extensive course of study that not only teaches how to simply code but how to learn and tackle novel problems. By the end of your course, you will graduate as a full-stack developer.",
             "course_modules": "Front-End Engineer, Back-End Engineer",
             "banner": "https://moringaschool.com/wp-content/uploads/2022/01/backend-768x514.jpg",
-            "status": "Intake on going",
+            status: "Intake on going",
             "requirements": "Access to a laptop or desktop computer, Access to a stable internet connection, Proficiency in written and spoken English",
             "fee": 150000,
             "start_date": "2013-01-01",
@@ -168,7 +98,7 @@ Course.create(
             "description": "In partnership with Amazon Web Services (AWS), the market leader among the world’s biggest cloud services, the AWS Cloud Practitioner programme will prepare you for a career with top international companies that use cloud-based technologies, such as Samsung, BMW, Sony, Unilever, Johnson & Johnson, Airbnb, Siemens, Adobe, Netflix, Pfizer, and many more.",
             "course_modules": "Artificial Intelligence Engineer",
             "banner": "https://moringaschool.com/wp-content/uploads/2022/08/moringa-students-ms005-768x454.jpg",
-            "status": "Intake on going",
+            status: "Intake on going",
             "requirements": "Access to a laptop or desktop computer, Access to a stable internet connection, Proficiency in written and spoken English",
             "fee": 200000,
             "start_date": "2013-01-12",
@@ -181,7 +111,7 @@ Course.create(
             "description": "DevOps focuses on better collaboration between the Development team and the Operations team. A DevOps Engineer is an individuals who oversee the entire software development lifecycle. They are instrumental in handling the code releases, implementing CI/CD pipeline, automating various processes, and solving any issues that arise during the development, deployment, or maintenance phase.",
             "course_modules": "Containerisation and Docker,Automation,Google cloud.",
             "banner": "https://moringaschool.com/wp-content/uploads/2022/09/moringa-devops-ms002-768x432.jpg",
-            "status": "Closed",
+            status: "Closed",
             "requirements": "Access to a laptop or desktop computer, Access to a stable internet connection, Proficiency in written and spoken English",
             "fee": 180000,
             "start_date": "2013-02-01",
@@ -194,7 +124,7 @@ Course.create(
             "description": "This is for individuals with a demanding schedule. Learn how to explore, analyze, visualize, build models with data using programming languh as Python and R, and deploy models into applications.This is the course for you. Kickstart the journey to your future career now!",
             "course_modules": "Artificial Intelligence Engineer",
             "banner": "https://moringaschool.com/wp-content/uploads/2021/08/moringa-students-ms007-768x404.jpg",
-            "status": "Intake on going",
+            status: "Intake on going",
             "requirements": "Access to a laptop or desktop computer, Access to a stable internet connection, Proficiency in written and spoken English",
             "fee": 150000,
             "start_date": "2013-01-01",
@@ -207,7 +137,7 @@ Course.create(
             "description": "Data visualization is the graphic representation of data analysis to achieve clear and effective communication of results and insights drawn from data. One of the key skills of a data scientist is the ability to tell a compelling story, visualizing data and findings in an approachable and stimulating way. Learning to leverare tools to visualize data takes you a step closer to becoming a good data scientist.",
             "course_modules": "Statistical Measures, Python loops & Functions, Data analysis in Pandas,",
             "banner": "https://moringaschool.com/wp-content/uploads/2023/02/data-visualization-with-python-kenya-768x522.jpg",
-            "status": "Closed",
+            status: "Closed",
             "requirements": "Have basic math skills.Have basic computer skills.Proficiency in English both spoken and written,Access to a laptop or desktop computer",
             "fee": 160000,
             "start_date": "2013-02-01",
@@ -216,7 +146,76 @@ Course.create(
     ]
 )
 
+# Application Data
+Application.create(
+    [{
+        applicant_id: 1,
+        course_id:2,
+        documents:"id, Birth certificate, KCSE certificate",
+        status:"Pending Review"
+    },
+    {
+        applicant_id: 1,
+        course_id:7,
+        documents:"id, Birth certificate, KCSE certificate",
+        status:"Submitted"
+    },
+    {
+        applicant_id: 1,
+        course_id:6,
+        documents:"id, Birth certificate, KCSE certificate, Software Certificate",
+        status:"Accepted"
+    },
+    {
+        applicant_id: 2,
+        course_id:4,
+        documents:"id, Birth certificate, KCSE certificate",
+        status:"Pending Review"
+    },
+    {
+        applicant_id: 4,
+        course_id:1,
+        documents:"id, Software development certification, KCSE certificate",
+        status:"Accepted"
+    },
+    {
+        applicant_id: 9,
+        course_id:1,
+        documents:"id, Software development certification, KCSE certificate",
+        status:"Submitted"
+    },
+    {
+        applicant_id: 8,
+        course_id:9,
+        documents:"id, Software development certification, KCSE certificate",
+        status:"Pending Review"
+    },
+    {
+        applicant_id: 7,
+        course_id:9,
+        documents:"id, Software development certification, KCSE certificate",
+        status:"Accepted"
+    },
+    {
+        applicant_id: 5,
+        course_id:8,
+        documents:"id, Birth certificate, KCSE certificate",
+        status:"Pending Review"
+    },
+    {
+        applicant_id: 4,
+        course_id:8,
+        documents:"id, Birth certificate, KCSE certificate",
+        status:"Pending Review"
+    },
+    {
+        applicant_id: 10,
+        course_id:6,
+        documents:"id, Birth certificate, KCSE certificate",
+        status:"Accepted"
+    }]
 
+)
 puts "Seeding done."
 
 
