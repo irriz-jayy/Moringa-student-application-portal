@@ -5,7 +5,7 @@ function LandingPage({ currentUserName }) {
     return(
         <div className="landing-page container-flex">
             <div className='landing-text container'>
-                {currentUserName ? <p className='user-greeting'>Welcome, {currentUserName}!</p> : <div></div>}
+                {currentUserName ? <h1 className='user-greeting'>Hello, {currentUserName}!</h1> : <div></div>}
                 <h1>Start your tech journey here</h1>
                 <p>View courses and manage your applications with ease.</p>
 

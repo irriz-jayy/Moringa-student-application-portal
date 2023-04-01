@@ -13,10 +13,73 @@ Applicant.create(username: "baz", first_name: "Luke ", last_name: "Dunphy", date
 Applicant.create(username: "cent", first_name: "Jean", last_name: "Albèrola", date_of_birth: "2002-11-30", email: "jeanMicheal@gmail.com", password: "jean")
 
 
-
-Application.create(applicant_id: 1, course_id: 1, documents:"null", status: "ok")
-Application.create(applicant_id: 2, course_id: 2, documents:"null", status: "pending")
-Application.create(applicant_id: 3, course_id: 3, documents:"null", status: "ok")
+# Application Data
+# {
+#     "applicant_id": 1,
+#     "course_id":2,
+#     "documents":"id, Birth certificate, KCSE certificate",
+#     "status":"Pending Review"
+# }
+# {
+#     "applicant_id": 1,
+#     "course_id":7,
+#     "documents":"id, Birth certificate, KCSE certificate",
+#     "status":"Submitted"
+# }
+# {
+#     "applicant_id": 1,
+#     "course_id":6,
+#     "documents":"id, Birth certificate, KCSE certificate, Software Certificate",
+#     "status":"Accepted"
+# }
+# {
+#     "applicant_id": 2,
+#     "course_id":4,
+#     "documents":"id, Birth certificate, KCSE certificate",
+#     "status":"Pending Review"
+# }
+# {
+#     "applicant_id": 4,
+#     "course_id":1,
+#     "documents":"id, Software development certification, KCSE certificate",
+#     "status":"Accepted"
+# }
+# {
+#     "applicant_id": 9,
+#     "course_id":1,
+#     "documents":"id, Software development certification, KCSE certificate",
+#     "status":"Submitted"
+# }
+# {
+#     "applicant_id": 8,
+#     "course_id":9,
+#     "documents":"id, Software development certification, KCSE certificate",
+#     "status":"Pending Review"
+# }
+# {
+#     "applicant_id": 7,
+#     "course_id":9,
+#     "documents":"id, Software development certification, KCSE certificate",
+#     "status":"Accepted"
+# }
+# {
+#     "applicant_id": 5,
+#     "course_id":8,
+#     "documents":"id, Birth certificate, KCSE certificate",
+#     "status":"Pending Review"
+# }
+# {
+#     "applicant_id": 4,
+#     "course_id":8,
+#     "documents":"id, Birth certificate, KCSE certificate",
+#     "status":"Pending Review"
+# }
+# {
+#     "applicant_id": 10,
+#     "course_id":6,
+#     "documents":"id, Birth certificate, KCSE certificate",
+#     "status":"Accepted"
+# }
 
 
 Course.create(

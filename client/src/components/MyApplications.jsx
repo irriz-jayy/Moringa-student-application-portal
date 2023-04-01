@@ -40,15 +40,18 @@ function MyApplications({currentUser}){
 
 
     return(
+      <div className="page card-page">
+        <div className="page-header">
+          <h1>My Applications</h1>
+        </div>
 
-        <div className="col">
-            My Applications
-            <div>
-                {mapped}
-            </div>
+        <div className="card-grid">
+          <div className="row row-cols-sm-1 row-cols-md-1 row-cols-lg-2 g-5">
+            {mapped}
+          </div> 
+        </div>
 
-    </div>
-
+      </div>
     )
 }
     export default MyApplications
