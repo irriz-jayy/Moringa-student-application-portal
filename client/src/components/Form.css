@@ -82,3 +82,10 @@ label {
 .form a:hover {
     color: #f5510f;
 }
+
+.form-notes {
+    margin: 0em;
+    padding: 0em !important;
+    justify-content: start !important;
+    font-size: 0.7em !important;
+}

@@ -1,15 +1,12 @@
 import React, {useEffect, useState} from "react";
 import { Link, useParams } from "react-router-dom";
-import MyApplications from "./MyApplications";
-
 
 
 function Application({currentUser, navigate}){
 
+    // States
     const [course, setCourse] = useState({})
     const {id} = useParams()
-    const {title,banner,description,modules,fee, duration} = course;
-
 
 
       // Fetch single course
@@ -36,10 +33,10 @@ function Application({currentUser, navigate}){
 
             //new application object
         const newApplication={
-            course_id: e.target.course_id.value,
-            applicant_id: e.target.applicant_id.value,
+            course_id: course.id,
+            applicant_id: currentUser.id,
             documents: e.target.documents.value,
-            status: e.target.status.value
+            status: "Submitted"
         }
         console.log(newApplication);
 
@@ -61,51 +58,36 @@ function Application({currentUser, navigate}){
     }
 
     return (
-        <div>APPLICATION PORTAL
-            <div>
+        <div className="page container-flex">
+            <div className="form">
+                <h1 className="form-title">New Application</h1>
+
                 <form onSubmit={handleApplicationSubmit}>
 
                     <div className="mb-3">
                         <label className="form-label">Course Name</label>
-                        <input className="form-control" value={title} type="text"/>
+                        <input className="form-control" value={course.title} type="text" disabled/>
                     </div>
-
-
-
-                    {/* These two input elements have been placed as hidden
-                    they wont display to the DOM But their data will be sent to the server */}
-
-
-                     <div className="mb-3">
-                        <label className="form-label" hidden>Course ID</label>
-                        <input className="form-control" hidden value={course.id} name="course_id" type="text"/>
-                    </div>
-
-                    <div className="mb-3">
-                        <label className="form-label" hidden>Applicant ID</label>
-                        <input className="form-control" hidden value={currentUser.id} name="applicant_id" type="text"/>
-                    </div>
-
-
-
 
                     <div className="mb-3">
                         <label className="form-label">Applicant's Name</label>
-                        <input className="form-control" value={currentUser.username} type="text"/>
+                        <input className="form-control" value={`${currentUser.first_name} ${currentUser.last_name}`} type="text" disabled/>
                     </div>
 
                     <div className="mb-3">
                         <label className="form-label">Status</label>
-                        <input className="form-control" value={'OPEN'} name="status" type="text"/>
+                        <input className="form-control" value={'Applying'} name="status" type="text" disabled/>
                     </div>
 
                     <div className="mb-3">
                         <label className="form-label">DOB</label>
-                        <input className="form-control" value={currentUser.date_of_birth} type="date"/>
+                        <input className="form-control" value={currentUser.date_of_birth} type="date" disabled/>
                     </div>
 
                     <div className="mb-3">
-                        <label className="form-label">Document</label>
+                        <label className="form-label">Documents</label>
+                        <br/>
+                        <p className="form-notes">Please list your documents separated by a comma</p>
                         <input className="form-control" name="documents" type="text"/>
                     </div>
 
