@@ -3,13 +3,17 @@
 }
 
 .page-header {
-    padding-block: 10px;
+    padding-block: 1em;
     padding-inline: 100px;
     background-color: #101f3c;
 }
 
 .page-header h1 {
     font-size: 3rem;
+}
+
+.searchbar {
+    padding-bottom: 1em;
 }
 
 .card-grid {

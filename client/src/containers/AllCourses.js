@@ -30,13 +30,13 @@ function AllCourses(){
         <div className="page card-page">
             <div className="page-header">
                     <h1>All Courses</h1>
-            </div>
+            
 
-                <div className="mb-3">
-                    <label className="form-label">Search Courses</label>
+                <div className="searchbar">
+                    <label className="form-label">Search Courses:</label>
                     <input className="form-control" value={search} onChange={(e)=>setSearch(e.target.value)} type="text" placeholder="Search by Course Name" />
                 </div>
-
+            </div>
 
             <div className="card-grid">
                 <div className="row row-cols-sm-1 row-cols-md-1 row-cols-lg-2 g-5">
