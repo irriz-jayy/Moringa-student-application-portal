@@ -1,0 +1,103 @@
+.course-details-page {
+    padding-block: 0px;
+}
+
+/* Header */
+.header {
+    margin: auto;
+    align-items: center;
+    padding-block: 4em;
+    padding-inline: 100px;
+    background-color: #101f3c;
+}
+
+.header .btn {
+    color: #ffffff;
+}
+
+.header .btn:hover {
+    color: #101f3c;
+    background-color: #ffffff;
+}
+
+.header .button {
+    max-height: min-content;
+    margin-block: 30px;
+    font-size: x-large;
+}
+
+.title {
+    padding-inline: 0px;
+}
+
+.icon-text {
+    color: #ffffff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.icon-text p {
+    font-size: 1.5rem;
+}
+
+.icon-text .icon {
+    height: 1.8rem;
+    width: max-content;
+    padding-right: 1rem;   
+}
+
+/* Call to Action */
+.call-to-action {
+    background-color: #f5510f;
+    padding-block: 0.5em;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+}
+.call-to-action .apply-link {
+    color: #ffffff;
+}
+
+.call-to-action .apply-link:hover {
+    color: #101f3c;
+    font-size: larger;
+}
+
+/* Body */
+.course-details {
+    padding-block: 3em;
+    margin-inline: auto;
+}
+
+.course-details h2 {
+    font-weight: 700;
+    padding-top: 1em;
+}
+
+.course-details p {
+    font-size: 1.3em;
+}
+
+/* Left Side */
+.course-description {
+    width: 50%;
+    margin-inline: 1em;
+    padding: 2em;
+    background-color: #ffffff;
+}
+
+.course-description p {
+    color: #101f3c;
+}
+
+/* Right Side */
+
+.course-specifications {
+    width: 50%;
+    margin-inline: 1em;
+    padding: 2em;
+    background-color: #101f3c;
+    color:#ffffff;
+    border-radius: 3em;
+}
