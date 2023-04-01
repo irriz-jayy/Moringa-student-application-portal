@@ -9,11 +9,11 @@ class ApplicationsController < ApplicationController
       application = Application.create!(application_params)
       render json: application, status: :created
     end
-  
+
     private
-  
+
     def application_params
       params.permit(:course_id, :applicant_id, :status, :documents)
     end
-  
+
 end
