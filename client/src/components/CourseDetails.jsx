@@ -52,8 +52,8 @@ function CourseDetails(){
                 </div>
             </div>
 
-            <div className="call-to-action">
-                <p>Intake Ongoing. <Link className="apply-link" to={`/applications/${course.id}`}>Apply Now!</Link></p>
+            <div className={`call-to-action ${course.status === "Intake on going" ? "" : "intake-closed"}`}>
+                {course.status === "Intake on going" ? <p>Intake Ongoing. <Link className="apply-link" to={`/applications/${course.id}`}>Apply Now!</Link></p> : <p>Intake currently closed</p>}
             </div>
 
             <div className="row course-details">
@@ -66,7 +66,7 @@ function CourseDetails(){
                 </div>
 
                 <div className="col course-specifications">
-                    <h2>Modules</h2>
+                    <h2>Modules/Positions</h2>
                     <p>{course_modules}</p>
 
                     <h2>Requirements</h2>

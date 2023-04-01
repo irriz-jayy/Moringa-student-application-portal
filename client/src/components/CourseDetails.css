@@ -55,6 +55,16 @@
     justify-content: center;
     font-weight: 700;
 }
+
+.call-to-action p {
+    margin: auto;
+    width: fit-content;
+}
+
+.intake-closed {
+    background-color: #484747;
+}
+
 .call-to-action .apply-link {
     color: #ffffff;
 }
