@@ -107,8 +107,8 @@ Course.create(
 
         { 
             "title": "DevOps Engineering",
-            "short_description": "DevOps is a set of practices that combines software development and IT operations",
-            "description": "DevOps focuses on better collaboration between the Development team and the Operations team. A DevOps Engineer is an individuals who oversee the entire software development lifecycle. They are instrumental in handling the code releases, implementing CI/CD pipeline, automating various processes, and solving any issues that arise during the development, deployment, or maintenance phase.",
+            "short_description": "DevOps is a set of practices that combines software Development and IT operations",
+            "description": "DevOps focuses on better collaboration between the Development team and the Operations team. A DevOps Engineer is an individuals who oversee the entire software Development lifecycle. They are instrumental in handling the code releases, implementing CI/CD pipeline, automating various processes, and solving any issues that arise during the Development, deployment, or maintenance phase.",
             "course_modules": "Containerisation and Docker,Automation,Google cloud.",
             "banner": "https://moringaschool.com/wp-content/uploads/2022/09/moringa-devops-ms002-768x432.jpg",
             status: "Closed",
@@ -151,67 +151,67 @@ Application.create(
     [{
         applicant_id: 1,
         course_id:2,
-        documents: "ID, Birth certificate, KCSE certificate",
+        documents: "ID, Birth Certificate, KCSE Certificate",
         status:"Pending Review"
     },
     {
         applicant_id: 1,
         course_id:7,
-        documents:"ID, Birth certificate, KCSE certificate",
+        documents:"ID, Birth Certificate, KCSE Certificate",
         status:"Submitted"
     },
     {
         applicant_id: 1,
         course_id:6,
-        documents:"ID, Birth certificate, KCSE certificate, Software Certificate",
+        documents:"ID, Birth Certificate, KCSE Certificate, Software Certificate",
         status:"Accepted"
     },
     {
         applicant_id: 2,
         course_id:4,
-        documents:"ID, Birth certificate, KCSE certificate",
+        documents:"ID, Birth Certificate, KCSE Certificate",
         status:"Pending Review"
     },
     {
         applicant_id: 4,
         course_id:1,
-        documents:"ID, Software development certification, KCSE certificate",
+        documents:"ID, Software Development Certification, KCSE Certificate",
         status:"Accepted"
     },
     {
         applicant_id: 9,
         course_id:1,
-        documents:"ID, Software development certification, KCSE certificate",
+        documents:"ID, Software Development Certification, KCSE Certificate",
         status:"Submitted"
     },
     {
         applicant_id: 8,
         course_id:9,
-        documents:"ID, Software development certification, KCSE certificate",
+        documents:"ID, Software Development Certification, KCSE Certificate",
         status:"Pending Review"
     },
     {
         applicant_id: 7,
         course_id:9,
-        documents:"ID, Software development certification, KCSE certificate",
+        documents:"ID, Software Development Certification, KCSE Certificate",
         status:"Accepted"
     },
     {
         applicant_id: 5,
         course_id:8,
-        documents:"ID, Birth certificate, KCSE certificate",
+        documents:"ID, Birth Certificate, KCSE Certificate",
         status:"Pending Review"
     },
     {
         applicant_id: 4,
         course_id:8,
-        documents:"ID, Birth certificate, KCSE certificate",
+        documents:"ID, Birth Certificate, KCSE Certificate",
         status:"Pending Review"
     },
     {
         applicant_id: 10,
         course_id:6,
-        documents:"ID, Birth certificate, KCSE certificate",
+        documents:"ID, Birth Certificate, KCSE Certificate",
         status:"Accepted"
     }]
 
