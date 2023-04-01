@@ -34,7 +34,7 @@ function CourseDetails(){
                     <h1 className="title">{title}</h1>
                     <p>Gain hands-on experience in {title}.</p>
 
-                    <Link className="btn button" to={`/applications/${course.id}`}>Apply Now</Link>
+                    <Link className={`btn button ${course.status === "Intake on going" ? "" : "disabled"}`} to={`/applications/${course.id}`}>Apply Now</Link>
                     
                     <div className="icon-text">
                         <VscCalendar className="icon"/><p>{date.toDateString()}</p>
