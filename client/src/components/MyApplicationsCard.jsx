@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 
 
 function MyApplicationsCard({application}){
-
+    const date = new Date(application.course.start_date);
+        
         function handleDelete(){
             alert('Backend not yet configured')
         }
@@ -22,12 +23,12 @@ function MyApplicationsCard({application}){
                     <em>Uploaded Documents: </em><p>{application.documents}</p>
 
                     <div className="start-date">
-                        <VscCalendar className="calendar-icon"/><p>{application.course.start_date}</p>
+                        <VscCalendar className="calendar-icon"/><p>{date.toDateString()}</p>
                     </div>
                 </div>
 
                 <div className="card-body button-row">
-                    <Link className={`btn card-button ${application.status === "Submitted" ? "" : "disabled"}`} to={`/update-application`}>Edit</Link>
+                    <Link className={`btn card-button ${application.status === "Submitted" ? "" : "disabled"}`} to={`/update-application/${application.id}`}>Edit</Link>
 
                     <button className="btn card-button card-button-outline" onClick={handleDelete} >Delete</button>
                 </div>

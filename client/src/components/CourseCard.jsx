@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function CourseCard({ course }){
     const {title, banner, description, short_description, modules,fee, start_date} = course;
-
+    const date = new Date(start_date);
 
     return(
         <div className="col">
@@ -18,7 +18,7 @@ function CourseCard({ course }){
                     <p className="card-text">{short_description}</p>
 
                     <div className="start-date">
-                        <VscCalendar className="calendar-icon"/><p>{start_date}</p>
+                        <VscCalendar className="calendar-icon"/><p>{date.toDateString()}</p>
                     </div>
                 </div>
 
