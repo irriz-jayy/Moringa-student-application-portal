@@ -57,6 +57,10 @@
 }
 
 /* Styles for All Widths */
+.user-greeting {
+    font-size: 3em;
+}
+
 .landing-text {
     position: absolute;
 }
