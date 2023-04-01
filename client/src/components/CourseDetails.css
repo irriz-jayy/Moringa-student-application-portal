@@ -47,6 +47,10 @@
     padding-right: 1rem;   
 }
 
+.header img {
+    max-width: 50rem;
+}
+
 /* Call to Action */
 .call-to-action {
     background-color: #f5510f;
