@@ -3,6 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom"
 
 function Navbar({ currentUser, setCurrentUser, navigate }){
+
     const logo_url = "https://raw.githubusercontent.com/irriz-jayy/Moringa-student-application-portal/main/client/src/frontend_images/Argonaut%20web%20services.png"
 
     // Event Handlders
@@ -14,6 +15,9 @@ function Navbar({ currentUser, setCurrentUser, navigate }){
 
         setCurrentUser({ })
     }
+
+
+   // console.log(currentUser.id)
 
     return (
         <div className="navbar border-bottom border-5">

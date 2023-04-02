@@ -4,9 +4,11 @@ import { Link } from "react-router-dom";
 import React, {useState, useEffect} from "react";
 import MyApplicationsCard from "./MyApplicationsCard";
 import LoadingScreen from "./LoadingScreen";
+import { toast } from "react-toastify";
 
 
-function MyApplications({currentUser}){
+
+function MyApplications({currentUser, navigate}){
 
     const [applications, setApplications] = useState([]);
 
@@ -35,21 +37,23 @@ function MyApplications({currentUser}){
       return  <MyApplicationsCard application={application} key={id}/>
     })
 
-    if(mapped.length === 0){
-      return <LoadingScreen />
+    if(currentUser.id === undefined){
+     
+        navigate('/login')
+
     }else{
       return(
         <div className="page card-page">
           <div className="page-header">
             <h1>My Applications</h1>
           </div>
-  
+
           <div className="card-grid">
             <div className="row row-cols-sm-1 row-cols-md-1 row-cols-lg-2 g-5">
               {mapped}
-            </div> 
+            </div>
           </div>
-  
+
         </div>
       )
     }

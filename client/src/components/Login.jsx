@@ -1,5 +1,6 @@
 import "./Form.css"
 import React, { useState } from "react";
+import { toast } from "react-toastify";
 
 
 function Login({ setCurrentUser, navigate }){
@@ -20,6 +21,8 @@ function Login({ setCurrentUser, navigate }){
         })
     }
 
+    const [errors, setErrors] = useState([])
+
     function handleSubmit(e){
         e.preventDefault();
 
@@ -30,17 +33,30 @@ function Login({ setCurrentUser, navigate }){
             },
             body: JSON.stringify(loginFormData)
         })
-        .then(res=>res.json())
-        .then(data=> setCurrentUser(data))
+        .then(res=>{
+            if(res.status ===401){
+                res.json()
+                .then(data=>{
+                    setErrors(data.errors)
+                    console.log(errors);
+                })
+            }else{
+                res.json()
+                .then(data=> setCurrentUser(data))
+                toast.success("Login Succesful");
+                navigate("/")
+            }
+        })
+
 
         e.target.reset()
-        navigate("/")
+
     }
 
     return (
         <div className="page container-flex">
             <div className="form">
-                
+
                 <h1 className="form-title">Login</h1>
 
                 <form onSubmit={handleSubmit}>
@@ -55,9 +71,12 @@ function Login({ setCurrentUser, navigate }){
                         <input className="form-control" name="password" type='password' placeholder="Password" value={loginFormData.password} onChange={handleChange}/>
                     </div>
 
+                    {errors ? errors.map((err,index)=> <p style={{color: "red"}} key={index}>{err}</p>):null}
+
                     <div className="form-submit">
                         <button type="submit" className="btn">Log In</button>
                     </div>
+
 
                 </form>
 

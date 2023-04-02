@@ -7,6 +7,8 @@ class Applicant < ApplicationRecord
     validates :first_name, presence: true
     validates :last_name, presence: true
     validates :email, presence: true,  uniqueness: true
+    validates :username, presence: true,  uniqueness: true
+    validates :date_of_birth, presence: true
     validate :over_18
 
     private
