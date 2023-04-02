@@ -8,8 +8,16 @@
 }
 
 /* Application Card */
-.application-card {
-    background-color: #ffffff;
+.confetti {
+    background-image: url("../frontend_images/vecteezy_realistic-multicolored-confetti-vector-for-the-festival_9345314_176.png");
+    background-repeat: none;
+    background-size: cover;
+    opacity: 0.2;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .application-card .card-text, .application-card p {

@@ -13,6 +13,8 @@ function MyApplicationsCard({application}){
         <div className="col">
             <div className="card application-card h-100">
 
+                {application.status === "Accepted" ? <div className="confetti"> <a href="https://www.vecteezy.com/free-png/party">Party PNGs by Vecteezy</a></div> : <div></div>}
+
                 <div className="card-body">
                     <h1 className="card-title">{application.course.title} Application</h1>
 
