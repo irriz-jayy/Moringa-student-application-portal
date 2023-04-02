@@ -16,7 +16,7 @@ Things you may want to cover:
 ##Project description.
 This is a rails api and react application that models a student application for Moringa where students can aply for various courses at the school. This project has a backend that provides the endpoints for the frontend and storage of user data. This project also has a client app that holds the frontend react app that just provides the GUI of the student application.
 
-##Setup instructions
+## Setup instructions
 
 1. Download the zip file under the 'Code' tab.
 2. Extract files from the zip file.
@@ -34,10 +34,10 @@ This is a rails api and react application that models a student application for 
    `rails s` to start server. And in a different terminal run: `npm start --prefix client`
 9. You can now view the project in "http://localhost:3000"
 
-##BDD
+## BDD
 As a user, I will be able to consume the following routes from the API and receive the following responses:
 
-###Courses
+### Courses
 
 GET/courses
 this will return records as JSON object
@@ -99,7 +99,7 @@ sh
 
 }]
 
-###Applicants
+### Applicants
 
 GET/applicants
 This will return the records as JSON
@@ -128,7 +128,7 @@ This will return the records as JSON
 DELETE/applicants/:id
 This will return a header with a no content reply
 
-###Applications
+### Applications
 GET/applications
 This will return the records as JSON
 [{
@@ -152,7 +152,7 @@ created_at: Sun, 02 Apr 2023 14:44:20.442285000 UTC +00:00,
 updated_at: Sun, 02 Apr 2023 14:44:20.442285000 UTC +00:00
 }]
 
-##User interface
+## User interface
 This is the homepage.
 
 This is the sign up page.
