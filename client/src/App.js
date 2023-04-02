@@ -56,7 +56,7 @@ function App() {
 
       <Route path='/applications/:id' element={<Application navigate={mainNavigate} currentUser={currentUser}/>}></Route>
 
-      <Route path='/my-applications' element={<MyApplications currentUser={currentUser}/>}></Route>
+      <Route path='/my-applications' element={<MyApplications navigate={mainNavigate} currentUser={currentUser}/>}></Route>
 
      < Route path='update-application/:id' element ={<UpdateApplication navigate={mainNavigate} />}></Route>
 

@@ -8,6 +8,7 @@ function Application({currentUser, navigate}){
     // States
     const [course, setCourse] = useState({})
     const {id} = useParams()
+    const [errors, setErrors] = useState({})
 
 
     // Fetch single course
@@ -21,7 +22,7 @@ function Application({currentUser, navigate}){
 
     window.scrollTo(0, 0)
     }, [])
-    
+
     function handleApplicationSubmit(e){
         e.preventDefault()
 
@@ -33,7 +34,7 @@ function Application({currentUser, navigate}){
             documents: e.target.documents.value,
             status: "Submitted"
         }
-        
+
         //post request for new applications
 
         fetch('/applications',{
@@ -57,45 +58,45 @@ function Application({currentUser, navigate}){
             <div className="page container-flex">
                 <div className="form">
                     <h1 className="form-title">New Application</h1>
-    
+
                     <form onSubmit={handleApplicationSubmit}>
-    
+
                         <div className="mb-3">
                             <label className="form-label">Course Name</label>
                             <input className="form-control" value={course.title} type="text" disabled/>
                         </div>
-    
+
                         <div className="mb-3">
                             <label className="form-label">Applicant's Name</label>
                             <input className="form-control" value={`${currentUser.first_name} ${currentUser.last_name}`} type="text" disabled/>
                         </div>
-    
+
                         <div className="mb-3">
                             <label className="form-label">Status</label>
                             <input className="form-control" value={'Applying'} name="status" type="text" disabled/>
                         </div>
-    
+
                         <div className="mb-3">
                             <label className="form-label">DOB</label>
                             <input className="form-control" value={currentUser.date_of_birth} type="date" disabled/>
                         </div>
-    
+
                         <div className="mb-3">
                             <label className="form-label">Documents</label>
                             <br/>
                             <p className="form-notes">Please list your documents separated by a comma</p>
                             <input className="form-control" name="documents" type="text"/>
                         </div>
-    
+
                         <div className="form-submit">
                              <button type="submit" className="btn">Submit</button>
                         </div>
-    
+
                     </form>
                 </div>
             </div>
         )
     }
-    
+
 }
 export default Application;
