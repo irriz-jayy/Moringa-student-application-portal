@@ -5,9 +5,16 @@ import { Link } from "react-router-dom";
 function MyApplicationsCard({application}){
     const date = new Date(application.course.start_date);
         
-        function handleDelete(){
-            alert('Backend not yet configured')
-        }
+    function handleDelete(){
+        fetch(`/applications/${application.id}`,{
+            method: "DELETE"
+        })
+        .then(res => {
+            if(res.ok){
+                window.location.reload();
+            }
+        })
+    }
 
     return (
         <div className="col">
@@ -32,7 +39,7 @@ function MyApplicationsCard({application}){
                 <div className="card-body button-row">
                     <Link className={`btn card-button ${application.status === "Submitted" ? "" : "disabled"}`} to={`/update-application/${application.id}`}>Edit</Link>
 
-                    <button className="btn card-button card-button-outline" onClick={handleDelete} >Delete</button>
+                    <button className={`btn card-button card-button-outline ${application.status !== "Accepted" ? "" : "disabled"}`}  onClick={handleDelete} >Delete</button>
                 </div>
 
             </div>
