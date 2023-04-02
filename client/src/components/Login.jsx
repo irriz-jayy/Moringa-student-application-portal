@@ -71,7 +71,7 @@ function Login({ setCurrentUser, navigate }){
                         <input className="form-control" name="password" type='password' placeholder="Password" value={loginFormData.password} onChange={handleChange}/>
                     </div>
 
-                    {errors ? errors.map((err,index)=> <p style={{color: "red"}} key={index}>{err}</p>):null}
+                    {errors ? errors.map((err,index)=> <p className="error" key={index}>*{err}!</p>):null}
 
                     <div className="form-submit">
                         <button type="submit" className="btn">Log In</button>

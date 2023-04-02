@@ -38,9 +38,7 @@ function MyApplications({currentUser, navigate}){
     })
 
     if(currentUser.id === undefined){
-     
         navigate('/login')
-
     }else{
       return(
         <div className="page card-page">

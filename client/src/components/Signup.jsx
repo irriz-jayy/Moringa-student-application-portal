@@ -68,39 +68,39 @@ console.log(errors);
           <div className="mb-3">
             <label className="form-label">First Name</label>
             <input className="form-control" value={signupFormData.first_name} onChange={handleSignupChange} name="first_name" type="text" placeholder="First Name" />
-            {errors.first_name ? errors.first_name.map((err,index)=> <p style={{color: "red"}} key ={index}>first name {err}</p>):null}
+            {errors.first_name ? errors.first_name.map((err,index)=> <p className="error" key ={index}>*First name {err}!</p>):null}
           </div>
 
 
           <div className="mb-3">
             <label className="form-label">Last Name</label>
             <input className="form-control" value={signupFormData.last_name} onChange={handleSignupChange} name="last_name" type="text" placeholder="Last Name" />
-            {errors.last_name ? errors.last_name.map((err,index)=> <p style={{color: "red"}} key ={index}>Last name {err}</p>):null}
+            {errors.last_name ? errors.last_name.map((err,index)=> <p className="error" key ={index}>*Last name {err}!</p>):null}
           </div>
 
           <div className="mb-3">
             <label className="form-label">Username</label>
             <input className="form-control" value={signupFormData.username} onChange={handleSignupChange} name="username" type="text" placeholder="Username" />
-            {errors.username ? errors.username.map((err,index)=> <p style={{color: "red"}} key ={index}>username {err}</p>):null}
+            {errors.username ? errors.username.map((err,index)=> <p className="error" key ={index}>*Username {err}!</p>):null}
           </div>
 
           <div className="mb-3">
             <label className="form-label">Date of Birth</label>
             <input className="form-control" value={signupFormData.date_of_birth} onChange={handleSignupChange} name="date_of_birth" type="date" placeholder="Date of Birth" />
-            {errors.date_of_birth ? errors.date_of_birth.map((err,index)=> <p style={{color: "red"}} key ={index}>Age {err}</p>):null}
-            {errors.age ? errors.age.map((err,index)=> <p style={{color: "red"}} key ={index}>{err}</p>):null}
+            {errors.date_of_birth ? errors.date_of_birth.map((err,index)=> <p className="error" key ={index}>*Age {err}!</p>):null}
+            {errors.age ? errors.age.map((err,index)=> <p className="error" key ={index}>*{err}!</p>):null}
           </div>
 
           <div className="mb-3">
             <label className="form-label">Email</label>
             <input className="form-control" value={signupFormData.email} onChange={handleSignupChange} name="email" type="email" placeholder="Email" />
-            {errors.email ? errors.email.map((err,index)=> <p style={{color: "red"}} key ={index}>Email {err}</p>):null}
+            {errors.email ? errors.email.map((err,index)=> <p className="error" key ={index}>*Email {err}!</p>):null}
           </div>
 
           <div className="mb-3">
             <label className="form-label">Password</label>
             <input className="form-control" value={signupFormData.password} onChange={handleSignupChange} name="password" type="password" placeholder="Password" />
-            {errors.password ? errors.password.map((err,index)=> <p style={{color: "red"}} key ={index}>Password {err}</p>):null}
+            {errors.password ? errors.password.map((err,index)=> <p className="error" key ={index}>*Password {err}!</p>):null}
           </div>
 
           <div className="form-submit">

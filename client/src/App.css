@@ -27,3 +27,11 @@ body {
   position: relative;
   margin-block: 3em;
 }
+
+.error {
+  margin: 0;
+  padding: 0 !important;
+  justify-content: start !important;
+  font-size: large !important;
+  color: #f5510f !important;
+}
