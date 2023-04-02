@@ -1,6 +1,7 @@
 import "./Form.css";
-import React,{useState, useEffect} from "react"
-import { useParams } from "react-router-dom"
+import React,{useState, useEffect} from "react";
+import { useParams } from "react-router-dom";
+import LoadingScreen from "./LoadingScreen";
 
 
 function UpdateApplication({ navigate }){
@@ -66,7 +67,7 @@ function UpdateApplication({ navigate }){
 
     if(application.course === undefined){
         return(
-            <h1>loading...</h1>
+            <LoadingScreen />
         )
     }else{
         return(
