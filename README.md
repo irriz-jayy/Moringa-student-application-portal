@@ -13,7 +13,8 @@ Things you may want to cover:
 
 # Moringa-student-application-portal
 
-##Project description.
+## Project description.
+
 This is a rails api and react application that models a student application for Moringa where students can aply for various courses at the school. This project has a backend that provides the endpoints for the frontend and storage of user data. This project also has a client app that holds the frontend react app that just provides the GUI of the student application.
 
 ## Setup instructions
@@ -35,65 +36,68 @@ This is a rails api and react application that models a student application for 
 9. You can now view the project in "http://localhost:3000"
 
 ## BDD
-As a user, I will be able to consume the following routes from the API and receive the following responses:
+
+- As a user, I will be able to consume the following routes from the API and receive the following responses:
 
 ### Courses
 
-GET/courses
-this will return records as JSON object
-[{
-id: 1,
-title: "Data Science",
-short_description: "It deals with data analysis",
-description:
-"This is for individuals with a demanding schedule. Learn how to explore, analyze, visualize, build models with data using programming languh as Python and R, and deploy models into applications.This is the course for you. Kickstart the journey to your future career now!",
-course_modules: "Artificial Intelligence Engineer",
-status: "Intake on going",
-banner:
-"https://moringaschool.com/wp-content/uploads/2021/08/moringa-students-ms009-768x400.jpg",
-requirements:
-"Access to a laptop or desktop computer, Access to a stable internet connection, Proficiency in written and spoken English",
-fee: 180000.0,
-start_date: Tue, 01 Jan 2013,
-duration: 6,
-created_at: Sun, 02 Apr 2023 14:44:20.098685000 UTC +00:00,
-updated_at: Sun, 02 Apr 2023 14:44:20.098685000 UTC +00:00>
-}]
+#### GET/courses
 
-GET/courses/:id
-This will return records as JSON
-[{course_modules
-:
-"Artificial Intelligence Engineer"
-description
-:
-"This is for individuals with a demanding schedule. Learn how to explore, analyze, visualize, build models with data using programming languh as Python and R, and deploy models into applications.This is the course for you. Kickstart the journey to your future career now!"
-duration
-:
-6
-fee
-:
-180000
-id
-:
-1
-requirements
-:
-"Access to a laptop or desktop computer, Access to a stable internet connection, Proficiency in written and spoken English"
-short_description
-:
-"It deals with data analysis"
-start_date
-:
-"2013-01-01"
-status
-:
-"Intake on going"
-title
-:
-"Data Science"}] 3. If the GET /courses request is not successful, it will return the following JSON data:
-sh
-[{
+- This will return records as JSON object
+  [{
+  id: 1,
+  title: "Data Science",
+  short_description: "It deals with data analysis",
+  description:
+  "This is for individuals with a demanding schedule. Learn how to explore, analyze, visualize, build models with data using programming languh as Python and R, and deploy models into applications.This is the course for you. Kickstart the journey to your future career now!",
+  course_modules: "Artificial Intelligence Engineer",
+  status: "Intake on going",
+  banner:
+  "https://moringaschool.com/wp-content/uploads/2021/08/moringa-students-ms009-768x400.jpg",
+  requirements:
+  "Access to a laptop or desktop computer, Access to a stable internet connection, Proficiency in written and spoken English",
+  fee: 180000.0,
+  start_date: Tue, 01 Jan 2013,
+  duration: 6,
+  created_at: Sun, 02 Apr 2023 14:44:20.098685000 UTC +00:00,
+  updated_at: Sun, 02 Apr 2023 14:44:20.098685000 UTC +00:00>
+  }]
+
+#### GET/courses/:id
+
+- This will return records as JSON
+  [{course_modules
+  :
+  "Artificial Intelligence Engineer"
+  description
+  :
+  "This is for individuals with a demanding schedule. Learn how to explore, analyze, visualize, build models with data using programming languh as Python and R, and deploy models into applications.This is the course for you. Kickstart the journey to your future career now!"
+  duration
+  :
+  6
+  fee
+  :
+  180000
+  id
+  :
+  1
+  requirements
+  :
+  "Access to a laptop or desktop computer, Access to a stable internet connection, Proficiency in written and spoken English"
+  short_description
+  :
+  "It deals with data analysis"
+  start_date
+  :
+  "2013-01-01"
+  status
+  :
+  "Intake on going"
+  title
+  :
+  "Data Science"}] 3. If the GET /courses request is not successful, it will return the following JSON data:
+  sh
+  [{
 
 "error": "Course not found"
 
@@ -101,66 +105,104 @@ sh
 
 ### Applicants
 
-GET/applicants
-This will return the records as JSON
-[{
-id: 1,  
- username: "Shebang",  
- first_name: "Hellen",  
- last_name: "Akinyi",  
- date_of_birth: Tue, 02 Mar 1999,  
- email: "shebang@gmail.com",  
- password_digest: "[FILTERED]",  
- created_at: Sun, 02 Apr 2023 14:44:16.865807000 UTC +00:00,  
- updated_at: Sun, 02 Apr 2023 14:44:16.865807000 UTC +00:00
-}]
+#### GET/applicants
 
-GET/applicants/:id
-This will return the records as JSON
-[{id: 1,  
- username: "Shebang",  
- first_name: "Hellen",  
- last_name: "Akinyi",  
- date_of_birth: Tue, 02 Mar 1999,  
- email: "shebang@gmail.com",  
- password_digest: "[FILTERED]", }]
+- This will return the records as JSON
+  [{
+  id: 1,  
+   username: "Shebang",  
+   first_name: "Hellen",  
+   last_name: "Akinyi",  
+   date_of_birth: Tue, 02 Mar 1999,  
+   email: "shebang@gmail.com",  
+   password_digest: "[FILTERED]",  
+   created_at: Sun, 02 Apr 2023 14:44:16.865807000 UTC +00:00,  
+   updated_at: Sun, 02 Apr 2023 14:44:16.865807000 UTC +00:00
+  }]
 
-DELETE/applicants/:id
-This will return a header with a no content reply
+#### GET/applicants/:id
+
+- This will return the records as JSON
+  [{id: 1,  
+   username: "Shebang",  
+   first_name: "Hellen",  
+   last_name: "Akinyi",  
+   date_of_birth: Tue, 02 Mar 1999,  
+   email: "shebang@gmail.com",  
+   password_digest: "[FILTERED]", }]
+
+#### DELETE/applicants/:id
+
+- This will return a header with a no content reply
 
 ### Applications
-GET/applications
-This will return the records as JSON
-[{
-id: 1,
-applicant_id: 1,
-course_id: 2,
-documents: "ID, Birth Certificate, KCSE Certificate",
-status: "Pending Review",
-created_at: Sun, 02 Apr 2023 14:44:20.442285000 UTC +00:00,
-updated_at: Sun, 02 Apr 2023 14:44:20.442285000 UTC +00:00}]
 
-GET/applications/:id
-This will return the records as JSON
-[{
-id: 1,
-applicant_id: 1,
-course_id: 2,
-documents: "ID, Birth Certificate, KCSE Certificate",
-status: "Pending Review",
-created_at: Sun, 02 Apr 2023 14:44:20.442285000 UTC +00:00,
-updated_at: Sun, 02 Apr 2023 14:44:20.442285000 UTC +00:00
-}]
+#### GET/applications
+
+- This will return the records as JSON
+  [{
+  id: 1,
+  applicant_id: 1,
+  course_id: 2,
+  documents: "ID, Birth Certificate, KCSE Certificate",
+  status: "Pending Review",
+  created_at: Sun, 02 Apr 2023 14:44:20.442285000 UTC +00:00,
+  updated_at: Sun, 02 Apr 2023 14:44:20.442285000 UTC +00:00}]
+
+#### GET/applications/:id
+
+- This will return the records as JSON
+  [{
+  id: 1,
+  applicant_id: 1,
+  course_id: 2,
+  documents: "ID, Birth Certificate, KCSE Certificate",
+  status: "Pending Review",
+  created_at: Sun, 02 Apr 2023 14:44:20.442285000 UTC +00:00,
+  updated_at: Sun, 02 Apr 2023 14:44:20.442285000 UTC +00:00
+  }]
 
 ## User interface
+
 This is the homepage.
+![homepage](https://bit.ly/42XD2hD)
 
 This is the sign up page.
+![signup](https://bit.ly/40Yoahp)
 
 This is the login page.
+![login](https://bit.ly/3GbUk10)
 
 This is the applications page.
+![applications](https://bit.ly/40W4rik)
 
 This is the all courses page.
+![courses](https://bit.ly/3ZDpB3I)
 
 This is the course details page.
+![coursedetail](https://bit.ly/3JXH9l2)
+
+## Bugs
+
+There are no bugs in this project. If you encounter any new issues, please create an issue in the repository.
+
+## Technologies Used
+
+- Ruby - `ruby 2.7.4p191`
+- Rails - `Rails 7.0.4.3`
+- React
+- Active Record
+- BCrypt
+- SqLite
+
+## Support/Contact Details
+
+For any queries feel free to reach out at the contacts below:
+
+- Email: joannaoluoch@gmail.com
+
+## License
+
+Licensed under the _MIT-license_.
+
+See the [LICENSE](LICENSE.md) file for license rights and limitations (MIT).
